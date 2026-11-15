@@ -812,9 +812,9 @@
         "Backend can be disabled without losing the lesson",
         "Fallback, timing and tolerance tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 62,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -831,9 +831,9 @@
         "Visual states correspond to stored numerical parameters",
         "Serialize/deserialize parameter tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 62,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -870,9 +870,9 @@
         "Comparable runs explain true determinism limits",
         "CPU golden runs and GPU tolerance tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 62,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
       "merged_commit": null,
       "verification_evidence": []
     },
