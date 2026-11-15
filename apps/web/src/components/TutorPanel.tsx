@@ -4,7 +4,7 @@ import {useEffect,useState} from 'react';
 type Node={stage:string;prompt:string;hints:string[]};
 type Evidence={id:string;kind:'computed'|'authored'|'measured'|'simulated'|'sourced';text:string};
 type Turn={source:string;label:string;text:string;reason?:string};
-const API=(import.meta.env.PUBLIC_TUTOR_API_URL as string|undefined)?.replace(/\/$/,'')??'';
+const API=((import.meta as unknown as {env?:Record<string,string|undefined>}).env?.PUBLIC_TUTOR_API_URL??'').replace(/\/$/,'');
 export default function TutorPanel({node,evidence}:{node:Node;evidence:Evidence[]}){
  const [hydrated,setHydrated]=useState(false);useEffect(()=>setHydrated(true),[]);
  const [enabled,setEnabled]=useState(false),[includeQuestion,setIncludeQuestion]=useState(false),[question,setQuestion]=useState('');
