@@ -1954,9 +1954,9 @@
         "Unauthorized editing, access and publishing fail closed",
         "CSRF, role escalation and expiry tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1973,9 +1973,9 @@
         "Private drafts cannot modify immutable public releases",
         "Invalid content and editing integration tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1993,9 +1993,9 @@
         "A changed or missing source invalidates dependent public claims",
         "Source-change and tampered citation tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2012,9 +2012,9 @@
         "Unreviewed assets and malicious formats cannot publish",
         "Asset signature and unsafe upload tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2032,9 +2032,9 @@
         "In-flight release failure leaves prior valid release available",
         "Atomic release and CDN consistency tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2051,9 +2051,9 @@
         "Core lessons remain functional with provider missing or disabled",
         "Outage and no-API complete journey tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2070,9 +2070,9 @@
         "Invented citations, legal decisions and political steering are rejected",
         "Red-team prompt and contradiction evaluation passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2090,9 +2090,9 @@
         "Raw browser media never leaves automatically and provider failure does not block learning",
         "Privacy and usage budget enforcement tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
