@@ -1,4 +1,5 @@
 import {useEffect,useMemo,useState} from 'react';
+import {reportProgress} from '../../../../packages/progress/src/progress.mjs';
 import {createMarketLesson,chooseStructure,predictConsequences,runMarket,viewMarketViewpoint,reviseDecision,runMarketTransfer,consequenceTable,LESSON_INPUTS,TRANSFER_MARKETS,MARKET_VIEWPOINTS} from '../../../../packages/economics/src/lesson.mjs';
 import type {MarketLesson as Lesson,Role,Sign} from '../../../../packages/economics/src/lesson.mjs';
 import {createStakeholderGraph,auditGraph} from '../../../../packages/economics/src/graph.mjs';
@@ -19,6 +20,7 @@ export default function MarketLesson(){
  const [structure,setStructure]=useState(STRUCTURES[0]!),[predictions,setPredictions]=useState<Record<Role,Sign>>({creators:'gains',learners:'pays',developers:'unchanged'});
  const [revisedTo,setRevisedTo]=useState(STRUCTURES[0]!),[cited,setCited]=useState(''),[reason,setReason]=useState(''),[market,setMarket]=useState<'small-entrant'|'large-entrant'>('large-entrant'),[cheapest,setCheapest]=useState(REGIMES[0]!),[error,setError]=useState('');
  const audit=useMemo(()=>auditGraph(GRAPH),[]),table=useMemo(()=>consequenceTable(),[]);
+ useEffect(()=>{if(lesson.stage!=='decide')reportProgress('market',lesson.stage==='complete'?'complete':lesson.stage==='transfer'?'revised':lesson.stage==='revise'||lesson.stage==='viewpoints'?'observed':'predicted')},[lesson.stage]);
  const act=(fn:()=>Lesson)=>{try{setLesson(fn());setError('')}catch(e){setError(e instanceof Error?e.message:'Step unavailable')}};
  const kinds=['permission','information','money'] as const;
  return <section className="learning-card market-lesson" aria-labelledby="market-title" data-hydrated={hydrated?'true':'false'}>

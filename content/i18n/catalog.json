@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceLocale": "en",
+  "locales": {"en": "English", "es": "Español"},
+  "entries": {
+    "guide.title": {"en": "Plain-language guide", "es": "Guía en lenguaje sencillo"},
+    "guide.intro": {"en": "Each lab asks one question. You try something, see what happens, and explain it in your own words.", "es": "Cada laboratorio hace una pregunta. Pruebas algo, ves qué pasa y lo explicas con tus propias palabras."},
+    "module.vision": {"en": "Vision lab: can a camera hide one symbol without looking at it first?", "es": "Laboratorio de visión: ¿puede una cámara ocultar un símbolo sin mirarlo primero?"},
+    "module.teach": {"en": "Teach a Machine: draw examples and see if the computer learns the shape or just remembers your drawings.", "es": "Enseña a una máquina: dibuja ejemplos y comprueba si la computadora aprende la forma o solo recuerda tus dibujos."},
+    "module.model": {"en": "What Did the Machine Learn?: open a small neural network and see what stays after the drawings are deleted.", "es": "¿Qué aprendió la máquina?: abre una pequeña red neuronal y mira qué queda después de borrar los dibujos."},
+    "module.music": {"en": "Music lab: compose a short tune and test what a computer can learn from the sound.", "es": "Laboratorio de música: compón una melodía corta y prueba qué puede aprender una computadora del sonido."},
+    "module.law": {"en": "Legal cases: test common beliefs about copying and teaching against dated U.S. sources.", "es": "Casos legales: pon a prueba creencias comunes sobre copiar y enseñar con fuentes de EE. UU. fechadas."},
+    "module.market": {"en": "Creator, Student and Market: follow who pays, who earns and who gives permission.", "es": "Creador, estudiante y mercado: sigue quién paga, quién gana y quién da permiso."},
+    "module.studio": {"en": "Write the Law: draft your own rule and let hard cases test it.", "es": "Escribe la ley: redacta tu propia regla y deja que los casos difíciles la pongan a prueba."},
+    "module.capstone": {"en": "Capstone: use what you saw to decide a new case. Any answer can pass if your reasons are clear.", "es": "Proyecto final: usa lo que viste para decidir un caso nuevo. Cualquier respuesta puede aprobar si tus razones son claras."},
+    "notice.notLaw": {"en": "The Right to Learn proposal is an incomplete draft. It is not law.", "es": "La propuesta del derecho a aprender es un borrador incompleto. No es ley."},
+    "notice.translation": {"en": "Translations explain. Official legal text is always shown in its original English.", "es": "Las traducciones explican. El texto legal oficial siempre se muestra en su inglés original."},
+    "official.copyrightClause": {"official": true, "en": "To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries.", "sourceId": "constitution-copyright-clause"}
+  }
+}

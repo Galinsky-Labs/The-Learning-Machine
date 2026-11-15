@@ -1954,11 +1954,15 @@
         "Unauthorized editing, access and publishing fail closed",
         "CSRF, role escalation and expiry tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-082",
@@ -1973,11 +1977,15 @@
         "Private drafts cannot modify immutable public releases",
         "Invalid content and editing integration tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-083",
@@ -1993,11 +2001,15 @@
         "A changed or missing source invalidates dependent public claims",
         "Source-change and tampered citation tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-084",
@@ -2012,11 +2024,15 @@
         "Unreviewed assets and malicious formats cannot publish",
         "Asset signature and unsafe upload tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-085",
@@ -2032,11 +2048,15 @@
         "In-flight release failure leaves prior valid release available",
         "Atomic release and CDN consistency tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-086",
@@ -2051,11 +2071,15 @@
         "Core lessons remain functional with provider missing or disabled",
         "Outage and no-API complete journey tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-087",
@@ -2070,11 +2094,15 @@
         "Invented citations, legal decisions and political steering are rejected",
         "Red-team prompt and contradiction evaluation passes"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-088",
@@ -2090,11 +2118,15 @@
         "Raw browser media never leaves automatically and provider failure does not block learning",
         "Privacy and usage budget enforcement tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 67,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "9ff273fc27fd3617c1c26d5f7c08057fca0debe0",
+      "verification_evidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-089",
@@ -2110,9 +2142,9 @@
         "No account is required and removed application state is not silently restored",
         "Import/export, corruption and deletion tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2129,9 +2161,9 @@
         "Translations never silently replace official legal authority",
         "Missing-locale and source-equivalence tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2153,11 +2185,13 @@
         "All eight concepts reachable through equivalent accessible interactions",
         "Automated and manual assistive matrix passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_progress",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
-      "verification_evidence": []
+      "verification_evidence": [
+        "Automated part only in PR #68: axe-core WCAG 2.0-2.2 A/AA on all 10 pages (Chromium + Firefox in CI), landmark/heading/reduced-motion checks, keyboard-operable Playwright routes for every module. Manual screen-reader/keyboard/zoom matrix not yet performed, so the unit is not accepted."
+      ]
     },
     {
       "id": "TLM-092",
@@ -2173,9 +2207,9 @@
         "Core experiences work in low-power and optional-service-offline modes",
         "Reference browsers and performance budgets pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2194,9 +2228,9 @@
         "No unresolved serious release-scope vulnerability remains",
         "Automated negative security and privacy evidence passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },

@@ -1,4 +1,5 @@
 import {useEffect,useMemo,useState} from 'react';
+import {reportProgress} from '../../../../packages/progress/src/progress.mjs';
 import {CASE_LIBRARY,runCaseLibrary} from '../../../../packages/policy-lab/src/case-library.mjs';
 import {buildTruthLayerView,inspectSource} from '../../../../packages/policy-lab/src/truth-layers.mjs';
 import type {TruthLayerView,InspectedSource} from '../../../../packages/policy-lab/src/truth-layers.mjs';
@@ -32,6 +33,7 @@ export default function LegalLesson({catalog,bill}:{catalog:unknown;bill:unknown
  const [hypothesis,setHypothesis]=useState(''),[prediction,setPrediction]=useState(''),[explanation,setExplanation]=useState(''),[error,setError]=useState('');
  const [transferId,setTransferId]=useState(''),[transferPrediction,setTransferPrediction]=useState('');
  const library=useMemo(()=>runCaseLibrary(catalog,bill),[catalog,bill]);
+ useEffect(()=>{if(state.stage!=='hypothesize')reportProgress('legal-cases',state.stage==='complete'?'complete':state.stage==='transfer'?'transfer':state.stage==='explain'?'explained':state.stage==='observe'?'observed':'predicted')},[state.stage]);
  const act=(fn:()=>LegalLessonState)=>{try{setState(fn());setError('')}catch(e){setError(e instanceof Error?e.message:'Step unavailable')}};
  function start(nextLesson:LessonId,nextCase:string){setLessonId(nextLesson);setCaseId(nextCase);setState(createLegalLesson(nextLesson,nextCase));setPrediction('');setTransferId('');setTransferPrediction('');setError('')}
  const current=caseOf(state.caseId),options=OUTCOME_OPTIONS[current.evaluator].options;

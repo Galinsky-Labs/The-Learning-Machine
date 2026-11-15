@@ -1,4 +1,5 @@
 import {useEffect,useMemo,useState} from 'react';
+import {reportProgress} from '../../../../packages/progress/src/progress.mjs';
 import {createBuilder,applyAction,buildPolicy,draftToPolicyInput,describeRule,FACT_CHOICES} from '../../../../packages/policy-lab/src/rule-builder.mjs';
 import type {Builder} from '../../../../packages/policy-lab/src/rule-builder.mjs';
 import {STUDIO_SCENARIOS,comparePolicies,tradeoffMatrix,exportHistory,importHistory,forkRevision,replayHistory} from '../../../../packages/policy-lab/src/studio.mjs';
@@ -29,6 +30,7 @@ export default function LawStudio({bill}:{bill:unknown}){
  const act=(fn:()=>WriteLawLesson)=>{try{setLesson(fn());setError('')}catch(e){setError(e instanceof Error?e.message:'Step unavailable')}};
  let current:StudioPolicy|null=null,draftError='';try{current=buildPolicy(builder)}catch(e){draftError=e instanceof Error?e.message:'Draft incomplete'}
  const history:History|null=lesson.history;
+ useEffect(()=>{if(lesson.stage!=='draft')reportProgress('write-the-law',lesson.stage==='complete'?'complete':lesson.stage==='defend'?'revised':lesson.stage==='revise'?'observed':'predicted')},[lesson.stage]);
  const policies=useMemo(()=>history?Object.values(history.heads).map(id=>history.revisions.find(r=>r.id===id)!.policy):[],[history]);
  const compareSet=current&&policies.length?[policies[0]!,...(JSON.stringify(current)!==JSON.stringify(policies[0])?[current]:[])]:current?[current]:[];
  const comparison=compareSet.length?comparePolicies({proposal:bill,policies:compareSet},STUDIO_SCENARIOS.find(s=>s.id===scenarioId)!.facts):null;

@@ -7,6 +7,10 @@
     ".": {
       "types": "./src/compiler.d.mts",
       "default": "./src/compiler.mjs"
+    },
+    "./i18n": {
+      "types": "./src/i18n.d.mts",
+      "default": "./src/i18n.mjs"
     }
   },
   "dependencies": {
