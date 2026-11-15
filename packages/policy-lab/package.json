@@ -39,6 +39,22 @@
     "./independent-limits": {
       "types": "./src/independent-limits.d.mts",
       "default": "./src/independent-limits.mjs"
+    },
+    "./model-outputs": {
+      "types": "./src/model-outputs.d.mts",
+      "default": "./src/model-outputs.mjs"
+    },
+    "./case-library": {
+      "types": "./src/case-library.d.mts",
+      "default": "./src/case-library.mjs"
+    },
+    "./truth-layers": {
+      "types": "./src/truth-layers.d.mts",
+      "default": "./src/truth-layers.mjs"
+    },
+    "./legal-lesson": {
+      "types": "./src/legal-lesson.d.mts",
+      "default": "./src/legal-lesson.mjs"
     }
   },
   "dependencies": {

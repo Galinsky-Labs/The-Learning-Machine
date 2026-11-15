@@ -1,0 +1,37 @@
+import {test,expect} from '@playwright/test';
+test('education legal lesson: predict, evaluate, inspect sources, disagree and transfer',async({page})=>{
+ test.setTimeout(60000);
+ const posts=[];page.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))posts.push(r.url())});
+ await page.goto('/law');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByLabel('Case').selectOption('for-profit-tutoring-display');
+ await page.getByLabel(/What do you think, and why/).fill('Teaching should always be allowed.');
+ await page.getByRole('button',{name:'Record legal hypothesis'}).click();
+ await page.getByLabel('exempt on cited facts').check();
+ await page.getByRole('button',{name:'Commit prediction'}).click();
+ await page.getByRole('button',{name:'Evaluate this case'}).click();
+ await expect(page.getByRole('region',{name:'Prediction beside the evaluated outcome'})).toContainText('different from your prediction');
+ await page.getByRole('button',{name:/Inspect 17 U.S.C. § 110/}).click();
+ await expect(page.getByRole('dialog')).toContainText('Scope limits');
+ await expect(page.getByText(/not enacted law/).first()).toBeVisible();
+ await page.getByRole('button',{name:'Explain the result'}).click();
+ await page.getByLabel(/Explain the result in your own words/).fill('Tutoring for profit is always allowed in my view.');
+ await page.getByRole('button',{name:'Submit legal explanation'}).click();
+ await expect(page.getByRole('region',{name:'Socratic legal challenge'})).toContainText('Which cited facts');
+ await page.getByLabel(/Explain the result in your own words/).fill('I disagree with the policy, but §110(1) as cited covers only nonprofit face-to-face teaching.');
+ await page.getByRole('button',{name:'Submit legal explanation'}).click();
+ await page.getByLabel('Transfer case').selectOption('nonprofit-classroom-display');
+ await page.getByLabel('outside section 110 1').check();
+ await page.getByRole('button',{name:'Evaluate transfer case'}).click();
+ await expect(page.getByRole('status').filter({hasText:'agreement is not required'})).toBeVisible();
+ expect(posts).toEqual([]);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2)).toBe(false);
+});
+test('acquisition lesson keeps acquisition separate from learning and lists the balanced case library',async({page})=>{
+ await page.goto('/law');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByLabel('Lesson').selectOption('acquisition');
+ await page.getByLabel('Case').selectOption('pirated-dataset');
+ await page.getByRole('button',{name:'See direct explanation'}).click();
+ await expect(page.getByText(/evaluator reports “unauthorized”/)).toBeVisible();
+ await page.getByText(/All 18 adversarial cases \(9 challenge pro-learning intuitions, 9 challenge pro-restriction/).click();
+ await expect(page.getByRole('table',{name:/18 of 18 reproduce/})).toBeVisible();
+});

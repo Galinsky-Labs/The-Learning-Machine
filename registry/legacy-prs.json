@@ -858,11 +858,14 @@
         "System never promises guaranteed physical memory erasure or unlearning",
         "Store inspection and disclosure tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 63,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "317785f7a22b03cf810e297c56137263e78c82e9",
+      "verification_evidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-036",
@@ -902,11 +905,14 @@
         "No performance metric or internal process is fabricated",
         "Trace provenance tests fail on synthetic labels missing disclosures"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 63,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "317785f7a22b03cf810e297c56137263e78c82e9",
+      "verification_evidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-038",
@@ -922,11 +928,14 @@
         "Learner revises after unexpected generalization failure",
         "Transfer and ambiguity fixtures pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 63,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "317785f7a22b03cf810e297c56137263e78c82e9",
+      "verification_evidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-039",
@@ -943,11 +952,14 @@
         "Learner explains retention without absolute guarantees",
         "Complete accessible learner-route tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 63,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "317785f7a22b03cf810e297c56137263e78c82e9",
+      "verification_evidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-040",
@@ -963,11 +975,14 @@
         "No unlimited compute loop freezes the interface",
         "Reference device perf and browser fallback tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 63,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "317785f7a22b03cf810e297c56137263e78c82e9",
+      "verification_evidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-041",

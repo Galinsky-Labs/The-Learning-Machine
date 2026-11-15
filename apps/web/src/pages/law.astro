@@ -1,0 +1,13 @@
+---
+import LegalLesson from '../components/LegalLesson.tsx';
+import catalog from '../../../../content/us-law/authorities.json';
+import bill from '../../../../content/us-law/proposed-bill.json';
+import '../styles/global.css';
+---
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Test common intuitions about teaching, copies, acquisition, models and outputs against sourced U.S. law fixtures."/>
+<title>Legal Cases — The Learning Machine</title></head><body><div class="shell">
+<header class="site-header"><a class="brand" href="/">The Learning Machine</a><span class="site-label">Legal cases</span></header>
+<main id="main-content"><section class="intro"><p class="eyebrow">Current law, proposal and hypothesis—kept apart</p><h1>Which intuition survives the facts?</h1><p class="lede">Eighteen cases each test a common belief—half that favour learning, half that favour restriction. Predict, evaluate, inspect every source, and explain in your own words. You may disagree.</p></section>
+<LegalLesson client:load catalog={catalog} bill={bill}/></main><footer>Educational fixtures. Not legal advice. No account or data submission.</footer>
+</div></body></html>
