@@ -1,0 +1,6 @@
+export const EVIDENCE_CLASSES:readonly ('measured'|'sourced-estimate'|'illustrative'|'unsupported')[];
+export interface Assumption {readonly id:string;readonly label:string;readonly low:number|null;readonly high:number|null;readonly unit:string;readonly evidenceClass:'measured'|'sourced-estimate'|'illustrative'|'unsupported';readonly source:string|null}
+export function assumption(input:{id:string;label:string;low:number|null;high:number|null;unit:string;evidenceClass:Assumption['evidenceClass'];source?:string|null}):Assumption;
+export interface Propagation {readonly status:'unknown'|'not-a-forecast'|'illustrative-range'|'sourced-range';readonly low:number|null;readonly high:number|null;readonly point:number|null;readonly missing:readonly string[];readonly unsupported?:readonly string[];readonly provenance:readonly {readonly id:string;readonly evidenceClass:string;readonly source:string|null;readonly range:readonly number[]|null}[];readonly statement:string}
+export function propagate(assumptions:readonly Assumption[],fn:(values:Record<string,number>)=>number,options?:{maxCorners?:number}):Propagation;
+export function sensitivity(assumptions:readonly Assumption[],fn:(values:Record<string,number>)=>number):{readonly status:string;readonly ranking:readonly {readonly id:string;readonly swing:number;readonly direction:string}[]};
