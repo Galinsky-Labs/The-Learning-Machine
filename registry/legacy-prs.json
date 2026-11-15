@@ -1586,11 +1586,14 @@
         "Permission, information and money flows cannot be conflated",
         "Graph type and actor consistency tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-066",
@@ -1604,11 +1607,14 @@
         "Every monetary transfer conserves modeled balance",
         "Overflow, conservation and rounding tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-067",
@@ -1623,11 +1629,14 @@
         "Financial consequences follow only declared inputs",
         "Deterministic transaction golden tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-068",
@@ -1642,11 +1651,14 @@
         "All estimates are visibly conditional, not factual verdicts",
         "Sensitivity edge cases and uncertainty checks pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-069",
@@ -1661,11 +1673,14 @@
         "Alternative assumptions can reverse outcome honestly",
         "Scenario comparison property tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-070",
@@ -1682,11 +1697,14 @@
         "Missing evidence never silently becomes a precise forecast",
         "Unknown-propagation and boundary tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-071",
@@ -1702,11 +1720,14 @@
         "Each viewpoint can challenge premise and produce reasoned opposition",
         "Role-switch and bias tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-072",
@@ -1725,11 +1746,14 @@
         "Learner revises decisions using explicit economic consequences",
         "Accessible E2E multi-perspective cases pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 65,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "dce675a88a4a36515ad4042893bd69c5b10cd869",
+      "verification_evidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-073",

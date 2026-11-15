@@ -168,6 +168,7 @@ const FLAW_CHECKS = Object.freeze([
   {id: "permits-distributed-copied-expression", scenario: "regurgitating-output", bad: ["permit"], question: "Your rule permits distributing outputs that reproduce protected expression. Is that intended, and what protects the creator's market?"},
   {id: "permits-unauthorized-source", scenario: "pirated-source", bad: ["permit"], question: "Your rule permits learning from an unauthorized copy. Does it reward the unauthorized acquisition?"},
   {id: "permits-permanent-archive", scenario: "permanent-archive", bad: ["permit"], question: "Your rule permits keeping copies for ten years. Is a permanent library still 'learning'?"},
+  {id: "permits-caching-streamed-work", scenario: "streamed-and-cached", bad: ["permit"], question: "Your rule permits keeping a streamed work for 30 days. Did the streaming license allow that copy?"},
   {id: "restricts-public-domain", scenario: "public-domain", bad: ["restrict"], question: "Your rule restricts using a public-domain work. What right is being protected?"},
   {id: "restricts-reading-without-copying", scenario: "no-copy-reading", bad: ["restrict"], question: "Your rule restricts reading that makes no copy. Is that broader than copyright reaches?"},
   {id: "restricts-lawful-ephemeral-learning", scenario: "lawful-ephemeral-learning", bad: ["restrict"], question: "Your rule restricts lawful, temporary, non-retained learning with no copied output. What harm does it prevent?"},

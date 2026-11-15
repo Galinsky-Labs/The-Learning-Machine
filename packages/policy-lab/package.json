@@ -55,6 +55,22 @@
     "./legal-lesson": {
       "types": "./src/legal-lesson.d.mts",
       "default": "./src/legal-lesson.mjs"
+    },
+    "./studio": {
+      "types": "./src/studio.d.mts",
+      "default": "./src/studio.mjs"
+    },
+    "./rule-builder": {
+      "types": "./src/rule-builder.d.mts",
+      "default": "./src/rule-builder.mjs"
+    },
+    "./write-law-lesson": {
+      "types": "./src/write-law-lesson.d.mts",
+      "default": "./src/write-law-lesson.mjs"
+    },
+    "./capstone": {
+      "types": "./src/capstone.d.mts",
+      "default": "./src/capstone.mjs"
     }
   },
   "dependencies": {

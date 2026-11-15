@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:13:13Z",
+  "observedAt": "2026-11-15T19:15:37Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1518,8 +1518,11 @@
       "scope": [
         "Model creator, publisher, learner, developer, user and regulator roles distinctly"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-066",
@@ -1536,8 +1539,11 @@
       "scope": [
         "Use fixed-point minor units, explicit rounding and balanced events"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-067",
@@ -1555,8 +1561,11 @@
       "scope": [
         "Simulate hypothetical lawful access and alternate license structures"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-068",
@@ -1574,8 +1583,11 @@
       "scope": [
         "Explore plausible changes in sales, licensing and expressively substitutive demand"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-069",
@@ -1593,8 +1605,11 @@
       "scope": [
         "Model startup entry costs, scale and various access-price assumptions"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-070",
@@ -1614,8 +1629,11 @@
       "scope": [
         "Store evidence classes, ranges and unsupported assumptions for every economic result"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-071",
@@ -1634,8 +1652,11 @@
       "scope": [
         "Show different interests without altering the factual core of a scenario"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-072",
@@ -1657,8 +1678,11 @@
       "scope": [
         "Guide visitor through rights, incentives, money and tradeoffs"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #65 head 05a51b5b8f1d9ebe1812d1d388d0009f4aadb366 passed workspace-and-foundation run 43751201624 (pnpm check incl. 15 new economics tests; Playwright desktop+mobile market-lesson specs).",
+        "PR #65 squash-merged as dce675a88a4a36515ad4042893bd69c5b10cd869."
+      ]
     },
     {
       "id": "TLM-073",
@@ -2771,12 +2795,12 @@
       "id": 5326178018,
       "number": 65,
       "title": "TLM-065..072: Economics package and Module 6 Creator, Student and Market",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "createdAt": "2026-11-15T19:13:12Z",
-      "updatedAt": "2026-11-15T19:13:12Z",
-      "mergedAt": null,
-      "closedAt": null,
+      "updatedAt": "2026-11-15T19:15:34Z",
+      "mergedAt": "2026-11-15T19:15:34Z",
+      "closedAt": "2026-11-15T19:15:34Z",
       "draft": false
     }
   ]
