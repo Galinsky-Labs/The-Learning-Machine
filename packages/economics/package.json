@@ -1,0 +1,16 @@
+{
+  "name": "@learning-machine/economics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./graph": {"types": "./src/graph.d.mts", "default": "./src/graph.mjs"},
+    "./money": {"types": "./src/money.d.mts", "default": "./src/money.mjs"},
+    "./scenarios": {"types": "./src/scenarios.d.mts", "default": "./src/scenarios.mjs"},
+    "./earnings": {"types": "./src/earnings.d.mts", "default": "./src/earnings.mjs"},
+    "./competition": {"types": "./src/competition.d.mts", "default": "./src/competition.mjs"},
+    "./assumptions": {"types": "./src/assumptions.d.mts", "default": "./src/assumptions.mjs"},
+    "./viewpoints": {"types": "./src/viewpoints.d.mts", "default": "./src/viewpoints.mjs"},
+    "./lesson": {"types": "./src/lesson.d.mts", "default": "./src/lesson.mjs"}
+  }
+}

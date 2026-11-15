@@ -1,0 +1,33 @@
+import {test,expect} from '@playwright/test';
+test('Module 6: predict, run a conserved ledger, switch viewpoints, revise with a cited consequence and transfer',async({page})=>{
+ test.setTimeout(60000);
+ const posts=[];page.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))posts.push(r.url())});
+ await page.goto('/market');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByLabel('Structure').selectOption('collective-license');
+ await page.getByRole('button',{name:'Choose structure'}).click();
+ await page.getByRole('button',{name:'Commit predictions'}).click();
+ await page.getByRole('button',{name:'Run the ledger'}).click();
+ await expect(page.getByRole('region',{name:'Computed consequences'})).toContainText('conserved');
+ await expect(page.getByText(/not a factual verdict/)).toBeVisible();
+ await page.getByRole('button',{name:'View as creator'}).click();
+ const digest=await page.getByRole('region',{name:'Viewpoint'}).locator('code').textContent();
+ await page.getByRole('button',{name:'View as developer'}).click();
+ await expect(page.getByRole('region',{name:'Viewpoint'})).toContainText('I oppose collective-license');
+ expect(await page.getByRole('region',{name:'Viewpoint'}).locator('code').textContent()).toBe(digest);
+ await page.getByLabel('Recommendation').selectOption('learning-permission-with-lawful-copy');
+ await page.getByLabel('Consequence you rely on').selectOption('collective-license:developers');
+ await page.getByLabel('Why?').fill('Developers pay much more under the collective license than buying lawful copies.');
+ await page.getByRole('button',{name:'Record revision'}).click();
+ await page.getByLabel('Market').selectOption('large-entrant');
+ await page.getByLabel('Your prediction').selectOption('collective-flat-license');
+ await page.getByRole('button',{name:'Compute entry costs'}).click();
+ await expect(page.getByRole('status').filter({hasText:'Module complete'})).toContainText('changed');
+ expect(posts).toEqual([]);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2)).toBe(false);
+});
+test('stakeholder graph lists the three flow types separately and flags payment without permission',async({page})=>{
+ await page.goto('/market');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByText('Stakeholder graph').click();
+ for(const name of ['permission flows','information flows','money flows'])await expect(page.getByRole('table',{name})).toBeVisible();
+ await expect(page.getByRole('list',{name:'Graph audit findings'})).toContainText('payment alone is not modelled as permission');
+});

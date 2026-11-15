@@ -53,6 +53,8 @@ importers:
 
   packages/contracts: {}
 
+  packages/economics: {}
+
   packages/evidence: {}
 
   packages/experiments:

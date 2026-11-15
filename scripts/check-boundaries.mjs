@@ -6,7 +6,8 @@ const deps={
  contracts:new Set(),
  content:new Set(['@learning-machine/contracts','node:crypto']),
  socratic:new Set(['@learning-machine/contracts','@learning-machine/content']),
- experiments:new Set(['@learning-machine/contracts'])
+ experiments:new Set(['@learning-machine/contracts']),
+ economics:new Set()
 };
 export function findForbiddenImports(text,allowed){
  const staticNames=text.split('\n').flatMap(line=>{
