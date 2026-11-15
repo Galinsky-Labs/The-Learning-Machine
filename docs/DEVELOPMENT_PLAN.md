@@ -1,6 +1,6 @@
 # The Learning Machine — Comprehensive Development and Pull Request Plan
 
-**Project:** neophilism/The-Learning-Machine  
+**Project:** Galinsky-Labs/The-Learning-Machine  
 **Plan date:** October 19, 2026  
 **Scope:** Standalone, bill-specific Socratic experiential learning product.  
 **Canonical machine-readable registry:** `registry/prs.json`  

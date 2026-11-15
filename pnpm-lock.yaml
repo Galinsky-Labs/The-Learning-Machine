@@ -43,6 +43,8 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
 
+  packages/audio-lab: {}
+
   packages/content:
     dependencies:
       '@learning-machine/contracts':
@@ -51,11 +53,15 @@ importers:
 
   packages/contracts: {}
 
+  packages/evidence: {}
+
   packages/experiments:
     dependencies:
       '@learning-machine/contracts':
         specifier: workspace:*
         version: link:../contracts
+
+  packages/learning-lab: {}
 
   packages/policy-lab:
     dependencies:
@@ -75,7 +81,7 @@ importers:
         specifier: workspace:*
         version: link:../contracts
 
-  packages/evidence: {}
+  packages/vision-lab: {}
 
 packages:
 
