@@ -2264,11 +2264,13 @@
         "Staging deploy and restored previous release work without other products",
         "Deployment and rollback smoke against actual origin passes"
       ],
-      "status": "in_review",
+      "status": "in_progress",
       "github_pr_number": 69,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/69",
       "merged_commit": null,
-      "verification_evidence": []
+      "verification_evidence": [
+        "Recovery drill 2026-11-15 via Render API on srv-dbsvitjbc2fs73cmp7lg: deploy dep-dbt0mmlckfvc73ceihg0 (883853f) live, rollback dep-dbt0n1c9v7es73bsh3t0 to 6dbb9d3 live, roll-forward dep-dbt0n3s9v7es73bshb6g live. API srv-dbt0iu3l550s739mr5m0 live with /health. Staging service and live-origin browser smoke not yet done."
+      ]
     },
     {
       "id": "TLM-095",

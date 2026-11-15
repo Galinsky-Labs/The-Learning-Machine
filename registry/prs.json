@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:45:15Z",
+  "observedAt": "2026-11-15T19:45:17Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -2196,8 +2196,10 @@
       "scope": [
         "Provision this project's CDN/static site, optional API, staging and rollback"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "in_progress",
+      "legacyEvidence": [
+        "Recovery drill 2026-11-15 via Render API on srv-dbsvitjbc2fs73cmp7lg: deploy dep-dbt0mmlckfvc73ceihg0 (883853f) live, rollback dep-dbt0n1c9v7es73bsh3t0 to 6dbb9d3 live, roll-forward dep-dbt0n3s9v7es73bshb6g live. API srv-dbt0iu3l550s739mr5m0 live with /health. Staging service and live-origin browser smoke not yet done."
+      ]
     },
     {
       "id": "TLM-095",
