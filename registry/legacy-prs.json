@@ -858,9 +858,9 @@
         "System never promises guaranteed physical memory erasure or unlearning",
         "Store inspection and disclosure tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 63,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -902,9 +902,9 @@
         "No performance metric or internal process is fabricated",
         "Trace provenance tests fail on synthetic labels missing disclosures"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 63,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -922,9 +922,9 @@
         "Learner revises after unexpected generalization failure",
         "Transfer and ambiguity fixtures pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 63,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -943,9 +943,9 @@
         "Learner explains retention without absolute guarantees",
         "Complete accessible learner-route tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 63,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -963,9 +963,9 @@
         "No unlimited compute loop freezes the interface",
         "Reference device perf and browser fallback tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 63,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
       "merged_commit": null,
       "verification_evidence": []
     },

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T18:54:22Z",
+  "observedAt": "2026-11-15T18:57:07Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -779,7 +779,9 @@
       "title": "Dataset disposal and retained-model demonstration",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-026",
         "TLM-034"
@@ -788,7 +790,7 @@
       "scope": [
         "Demonstrate application-store cleanup versus retained learned model"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -820,7 +822,9 @@
       "title": "Honest performance and intermediate-operation microscope",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-018",
         "TLM-035",
@@ -830,7 +834,7 @@
       "scope": [
         "Instrument real processing steps and distinguish illustrations"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -838,7 +842,9 @@
       "title": "Unseen transfer and overfitting challenge",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-030",
         "TLM-031",
@@ -848,7 +854,7 @@
       "scope": [
         "Present novel tasks that distinguish rule transfer from rote memory"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -856,7 +862,9 @@
       "title": "Module 3: What Did the Machine Learn?",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-034",
         "TLM-035",
@@ -867,7 +875,7 @@
       "scope": [
         "Teach parameters, source disposal, reconstructability and generalization"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -875,7 +883,9 @@
       "title": "ML device limits and browser compatibility",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-033",
         "TLM-035",
@@ -885,7 +895,7 @@
       "scope": [
         "Bound memory, time, workers and offer honest low-power alternatives"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2676,6 +2686,18 @@
       "updatedAt": "2026-11-15T18:54:11Z",
       "mergedAt": "2026-11-15T18:54:11Z",
       "closedAt": "2026-11-15T18:54:11Z",
+      "draft": false
+    },
+    {
+      "id": 5326032538,
+      "number": 63,
+      "title": "TLM-035/037/038/039/040: Retention, microscope, transfer, Module 3 and device limits",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
+      "createdAt": "2026-11-15T18:57:05Z",
+      "updatedAt": "2026-11-15T18:57:05Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
