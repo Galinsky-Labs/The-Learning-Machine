@@ -1,10 +1,14 @@
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {buildLessonDataset,buildLessonSplit} from '../../../../packages/learning-lab/src/lesson-data.mjs';
-import {trainNeuralNetwork,evaluateNetworkHoldout,NEURAL_LIMITS} from '../../../../packages/learning-lab/src/neural.mjs';
+import {trainNeuralNetwork,evaluateNetworkHoldout,validateNeuralModel,NEURAL_LIMITS} from '../../../../packages/learning-lab/src/neural.mjs';
 import type {NeuralModel} from '../../../../packages/learning-lab/src/neural.mjs';
 import {inspectParameters,weightGrid,parameterChange,serializeModel,deserializeModel,parameterChecksum} from '../../../../packages/learning-lab/src/inspector.mjs';
 import {createModelExperimentTrace,replayModelExperiment} from '../../../../packages/learning-lab/src/model-trace.mjs';
 import type {ReplayResult} from '../../../../packages/learning-lab/src/model-trace.mjs';
+import ModelRetention from './ModelRetention.tsx';
+import type {RetentionEvent} from './ModelRetention.tsx';
+import {detectCapabilities,planTraining,createTrainingWorkerController} from '../../../../packages/learning-lab/src/device-limits.mjs';
+import type {TrainingPlan} from '../../../../packages/learning-lab/src/device-limits.mjs';
 
 type Backend='reference'|'tfjs';
 const fmt=(n:number,d=4)=>Number.isFinite(n)?n.toFixed(d):'—';
@@ -17,7 +21,7 @@ export function WeightHeatmap({grid,label}:{grid:readonly (readonly number[])[];
  },[grid,peak]);
  return <figure className="weight-heatmap"><canvas ref={canvas} width={192} height={192} role="img" aria-label={`${label}: blue cells are positive stored weights, red cells negative; strongest magnitude ${peak.toFixed(4)}`}/><figcaption>{label}. Colour scale is relative to the largest stored magnitude ({peak.toFixed(4)}).</figcaption></figure>;
 }
-export default function ModelLab(){
+export default function ModelLab({onRetentionEvent,onTrained}:{onRetentionEvent?:(event:RetentionEvent)=>void;onTrained?:(model:NeuralModel)=>void}={}){
  const dataset=useMemo(()=>buildLessonDataset(),[]),split=useMemo(()=>buildLessonSplit(dataset),[dataset]);
  const [backend,setBackend]=useState<Backend>('reference'),[preferGpu,setPreferGpu]=useState(false);
  const [hiddenUnits,setHiddenUnits]=useState(8),[epochs,setEpochs]=useState(60);
@@ -26,13 +30,25 @@ export default function ModelLab(){
  const [restoreText,setRestoreText]=useState(''),[restoreResult,setRestoreResult]=useState(''),[replay,setReplay]=useState<ReplayResult|null>(null);
  const [hydrated,setHydrated]=useState(false);useEffect(()=>setHydrated(true),[]);
  const controller=useRef<AbortController|null>(null);
+ const [plan,setPlan]=useState<TrainingPlan|null>(null),[runCount,setRunCount]=useState(0);
+ const workers=useMemo(()=>typeof Worker==='function'?createTrainingWorkerController(()=>new Worker(new URL('../workers/model.worker.ts',import.meta.url),{type:'module'})):null,[]);
+ useEffect(()=>{setPlan(planTraining({examples:split.trainIds.length,hiddenUnits,epochs,classes:split.classes.length},detectCapabilities(globalThis)))},[hiddenUnits,epochs,split]);
+ useEffect(()=>()=>{workers?.cancel('Page closed')},[workers]);
  async function train(){
   setBusy(true);setError('');setReplay(null);setRestoreResult('');
   const abort=new AbortController();controller.current=abort;
   setStatus(backend==='tfjs'?'Loading optional TensorFlow.js locally, then training…':'Training the built-in reference network…');
   try{
    const loader=async()=>{const {loadTensorflow}=await import('../../../../packages/learning-lab/src/tf-loader.mjs');return loadTensorflow({preferGpu})};
-   const trained=await trainNeuralNetwork(dataset,split,{hiddenUnits,epochs},{backend,loadTensorflow:loader,signal:abort.signal});
+   const active=plan??planTraining({examples:split.trainIds.length,hiddenUnits,epochs,classes:split.classes.length},detectCapabilities(globalThis));
+   const options={hiddenUnits:active.hiddenUnits,epochs:active.epochs,timeBudgetMs:active.timeBudgetMs};
+   let trained:NeuralModel;
+   if(backend==='reference'&&workers){
+    abort.signal.addEventListener('abort',()=>workers.cancel('Training cancelled'),{once:true});
+    const raw=await workers.run<NeuralModel>({dataset,split,options},{budgetMs:active.timeBudgetMs});
+    trained=Object.freeze(validateNeuralModel(raw));// fail closed on anything the worker returns
+   }else trained=await trainNeuralNetwork(dataset,split,options,{backend,loadTensorflow:loader,signal:abort.signal});
+   onTrained?.(trained);setRunCount(n=>n+1);
    setModel(trained);setUnit(0);
    setStatus(`Trained with ${trained.backend}: ${trained.epochs} of ${trained.requestedEpochs} epochs (${trained.stoppedReason}).`);
   }catch(e){setError(e instanceof Error?e.message:'Training failed');setStatus('Training failed; the previous model, if any, is unchanged.')}
@@ -53,11 +69,13 @@ export default function ModelLab(){
   <p>The training set is {split.trainIds.length} original drawings of lines, squares and crosses; {split.testIds.length} more are held out. Everything runs in this tab.</p>
   <fieldset><legend>Training engine</legend>
    <label><input type="radio" name="backend" checked={backend==='reference'} onChange={()=>setBackend('reference')}/> Built-in reference network (no download, exact replay)</label>
-   <label><input type="radio" name="backend" checked={backend==='tfjs'} onChange={()=>setBackend('tfjs')}/> Optional TensorFlow.js (loaded from this site only when you train)</label>
-   {backend==='tfjs'&&<label><input type="checkbox" checked={preferGpu} onChange={e=>setPreferGpu(e.target.checked)}/> Try the WebGL GPU backend first</label>}
+   <label><input type="radio" name="backend" disabled={plan?.offerTensorflow===false} checked={backend==='tfjs'} onChange={()=>setBackend('tfjs')}/> Optional TensorFlow.js (loaded from this site only when you train)</label>
+   {backend==='tfjs'&&plan?.offerGpu!==false&&<label><input type="checkbox" checked={preferGpu} onChange={e=>setPreferGpu(e.target.checked)}/> Try the WebGL GPU backend first</label>}
    <label>Hidden units <input type="number" min={NEURAL_LIMITS.minHidden} max={NEURAL_LIMITS.maxHidden} value={hiddenUnits} onChange={e=>setHiddenUnits(Number(e.target.value))}/></label>
    <label>Epochs <input type="number" min={1} max={NEURAL_LIMITS.maxEpochs} value={epochs} onChange={e=>setEpochs(Number(e.target.value))}/></label>
   </fieldset>
+  {plan&&<div className="status-note" role="note" aria-label="Device limits"><p>Plan for this device: <strong>{plan.mode}</strong> — {plan.hiddenUnits} hidden units, {plan.epochs} epochs, at most {(plan.timeBudgetMs/1000).toFixed(1)} s, about {(plan.work.multiplyAdds/1e6).toFixed(1)} million multiply-adds ({plan.work.basis}). {plan.runInWorker?'Training runs in a background worker that is stopped if it overruns.':'No background worker is available, so training runs on this page within the time budget.'}</p>
+   {plan.reasons.length>0&&<ul>{plan.reasons.map(r=><li key={r}>{r}</li>)}</ul>}{plan.mode==='low-power'&&<p>{plan.alternative}</p>}</div>}
   <div className="controls"><button type="button" className="action action-primary" disabled={!hydrated||busy} onClick={train}>Train neural network</button>
    <button type="button" className="action" disabled={!busy} onClick={()=>controller.current?.abort()}>Cancel training</button></div>
   <p role="status" className="status-note">{status}</p>{error&&<p className="error" role="alert">{error}</p>}
@@ -88,6 +106,7 @@ export default function ModelLab(){
     <label className="response-label">Serialized model to restore<textarea className="response" value={restoreText} onChange={e=>setRestoreText(e.target.value)}/></label>
     <button type="button" className="action" onClick={restore}>Restore and verify</button>{restoreResult&&<p role="status">{restoreResult}</p>}
    </section>
+   <ModelRetention key={trace.parameterChecksum+'-'+runCount} dataset={dataset} split={split} network={model} onProgress={onRetentionEvent}/>
   </>}
  </section>;
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T18:37:29Z",
+  "observedAt": "2026-11-15T18:57:07Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -744,8 +744,12 @@
       "scope": [
         "Lazy-load real local neural training with CPU fallback and limits"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #62 head 9d0bf2707c1b89c939b6315ccd795fd4f32378d7 passed workspace-and-foundation run 43749172040 (pnpm check incl. 15 new learning-lab tests, Playwright desktop+mobile model-lab specs).",
+        "TF.js CPU backend parameters stayed within 1e-4 of the float64 reference; reference CPU golden checksum 46cb5413 pinned in tests.",
+        "PR #62 squash-merged as baf1bc2d97987c1a3ba62153fdeec98adda3c811."
+      ]
     },
     {
       "id": "TLM-034",
@@ -763,15 +767,21 @@
       "scope": [
         "Expose real weights/centroids and changes caused by training"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #62 head 9d0bf2707c1b89c939b6315ccd795fd4f32378d7 passed workspace-and-foundation run 43749172040 (pnpm check incl. 15 new learning-lab tests, Playwright desktop+mobile model-lab specs).",
+        "TF.js CPU backend parameters stayed within 1e-4 of the float64 reference; reference CPU golden checksum 46cb5413 pinned in tests.",
+        "PR #62 squash-merged as baf1bc2d97987c1a3ba62153fdeec98adda3c811."
+      ]
     },
     {
       "id": "TLM-035",
       "title": "Dataset disposal and retained-model demonstration",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-026",
         "TLM-034"
@@ -780,7 +790,7 @@
       "scope": [
         "Demonstrate application-store cleanup versus retained learned model"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -800,15 +810,21 @@
       "scope": [
         "Pin algorithm, inputs, seeds and backend caveats in replay trace"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #62 head 9d0bf2707c1b89c939b6315ccd795fd4f32378d7 passed workspace-and-foundation run 43749172040 (pnpm check incl. 15 new learning-lab tests, Playwright desktop+mobile model-lab specs).",
+        "TF.js CPU backend parameters stayed within 1e-4 of the float64 reference; reference CPU golden checksum 46cb5413 pinned in tests.",
+        "PR #62 squash-merged as baf1bc2d97987c1a3ba62153fdeec98adda3c811."
+      ]
     },
     {
       "id": "TLM-037",
       "title": "Honest performance and intermediate-operation microscope",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-018",
         "TLM-035",
@@ -818,7 +834,7 @@
       "scope": [
         "Instrument real processing steps and distinguish illustrations"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -826,7 +842,9 @@
       "title": "Unseen transfer and overfitting challenge",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-030",
         "TLM-031",
@@ -836,7 +854,7 @@
       "scope": [
         "Present novel tasks that distinguish rule transfer from rote memory"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -844,7 +862,9 @@
       "title": "Module 3: What Did the Machine Learn?",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-034",
         "TLM-035",
@@ -855,7 +875,7 @@
       "scope": [
         "Teach parameters, source disposal, reconstructability and generalization"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -863,7 +883,9 @@
       "title": "ML device limits and browser compatibility",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "dependsOn": [
         "TLM-033",
         "TLM-035",
@@ -873,7 +895,7 @@
       "scope": [
         "Bound memory, time, workers and offer honest low-power alternatives"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2658,10 +2680,22 @@
       "id": 5325863073,
       "number": 62,
       "title": "TLM-033/034/036: Optional TF.js network, parameter inspector, reproducible traces",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
       "createdAt": "2026-11-15T18:37:27Z",
-      "updatedAt": "2026-11-15T18:37:27Z",
+      "updatedAt": "2026-11-15T18:54:11Z",
+      "mergedAt": "2026-11-15T18:54:11Z",
+      "closedAt": "2026-11-15T18:54:11Z",
+      "draft": false
+    },
+    {
+      "id": 5326032538,
+      "number": 63,
+      "title": "TLM-035/037/038/039/040: Retention, microscope, transfer, Module 3 and device limits",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
+      "createdAt": "2026-11-15T18:57:05Z",
+      "updatedAt": "2026-11-15T18:57:05Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false

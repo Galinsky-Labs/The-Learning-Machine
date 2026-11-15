@@ -24,6 +24,26 @@
     "./lesson-data": {
       "types": "./src/lesson-data.d.mts",
       "default": "./src/lesson-data.mjs"
+    },
+    "./retention": {
+      "types": "./src/retention.d.mts",
+      "default": "./src/retention.mjs"
+    },
+    "./microscope": {
+      "types": "./src/microscope.d.mts",
+      "default": "./src/microscope.mjs"
+    },
+    "./transfer": {
+      "types": "./src/transfer.d.mts",
+      "default": "./src/transfer.mjs"
+    },
+    "./device-limits": {
+      "types": "./src/device-limits.d.mts",
+      "default": "./src/device-limits.mjs"
+    },
+    "./model-lesson": {
+      "types": "./src/model-lesson.d.mts",
+      "default": "./src/model-lesson.mjs"
     }
   },
   "dependencies": {

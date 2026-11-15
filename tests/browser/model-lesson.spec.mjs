@@ -1,0 +1,34 @@
+import {test,expect} from '@playwright/test';
+test('Module 3 route: hypothesis, committed predictions, real disposal observation, challenged explanation and transfer',async({page})=>{
+ test.setTimeout(60000);
+ const posts=[];page.on('request',r=>{if(!['GET','HEAD'].includes(r.method()))posts.push(r.url())});
+ await page.goto('/model');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await expect(page.getByRole('navigation',{name:'What Did the Machine Learn? lesson progress'})).toBeVisible();
+ await page.getByLabel(/Your hypothesis/).fill('Deleting the drawings makes the model forget them.');
+ await page.getByRole('button',{name:'Record hypothesis'}).click();
+ await page.getByLabel('The memorizer still holds exact training drawings').check();
+ await page.getByRole('button',{name:'Commit predictions'}).click();
+ await expect(page.getByRole('note',{name:'Device limits'})).toContainText('multiply-adds');
+ await page.getByRole('button',{name:'Train neural network'}).click();
+ await page.getByRole('button',{name:'Dispose of the training data'}).click();
+ const observed=page.getByRole('region',{name:'Your predictions beside the observations'});
+ await expect(observed).toContainText('differs from your prediction');
+ await page.getByRole('button',{name:'Explain what you saw'}).click();
+ const box=page.getByLabel(/what does the model retain/);
+ await box.fill('After disposal the drawings are permanently erased from everywhere.');
+ await page.getByRole('button',{name:'Submit explanation'}).click();
+ await expect(page.getByRole('region',{name:'Socratic challenge'})).toContainText('What evidence');
+ await box.fill('The network still works and the memorizer keeps copies; the page cannot prove every memory copy is gone.');
+ await page.getByRole('button',{name:'Submit explanation'}).click();
+ await page.getByRole('button',{name:'Run the transfer challenge'}).click();
+ await page.getByLabel('How does this change your explanation of what the models learned?').fill('Shifted shapes fail, so position-specific pixels were learned.');
+ await page.getByRole('button',{name:'Record transfer revision'}).click();
+ await expect(page.getByText(/You completed “What Did the Machine Learn\?”/)).toBeVisible();
+ expect(posts).toEqual([]);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2)).toBe(false);
+});
+test('direct explanation is available immediately without completing the route',async({page})=>{
+ await page.goto('/model');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByRole('button',{name:'See direct explanation'}).click();
+ await expect(page.getByText(/does not remove what the parameters learned/)).toBeVisible();
+});
