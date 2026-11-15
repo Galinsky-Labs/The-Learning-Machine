@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:22:19Z",
+  "observedAt": "2026-11-15T19:25:38Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1701,8 +1701,11 @@
       "scope": [
         "Support nested conditions and annotations without arbitrary code"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-074",
@@ -1720,8 +1723,11 @@
       "scope": [
         "Build terms, exclusions, carveouts, previews, undo and keyboard navigation"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-075",
@@ -1740,8 +1746,11 @@
       "scope": [
         "Run present law, proposal and visitor rules on identical facts"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-076",
@@ -1759,8 +1768,11 @@
       "scope": [
         "Show rights, burdens, exceptions, indeterminate outcomes and actor impact"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-077",
@@ -1779,8 +1791,11 @@
       "scope": [
         "Challenge any policy with its concrete flaws and counterexamples"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-078",
@@ -1799,8 +1814,11 @@
       "scope": [
         "Enable revision, comparisons and local export of original user hypotheses"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-079",
@@ -1823,8 +1841,11 @@
       "scope": [
         "Create real proposed-law challenge and counterexample-driven revision"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-080",
@@ -1844,8 +1865,11 @@
       "scope": [
         "Integrate technical, legal and economic evidence in novel transfer exercises"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-081",
@@ -2823,12 +2847,12 @@
       "id": 5326265553,
       "number": 66,
       "title": "TLM-073..080: Write the Law studio and Right to Learn capstone",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "createdAt": "2026-11-15T19:22:17Z",
-      "updatedAt": "2026-11-15T19:22:18Z",
-      "mergedAt": null,
-      "closedAt": null,
+      "updatedAt": "2026-11-15T19:25:36Z",
+      "mergedAt": "2026-11-15T19:25:36Z",
+      "closedAt": "2026-11-15T19:25:36Z",
       "draft": false
     }
   ]

@@ -2,8 +2,12 @@
 import {compileLearningModule} from '@learning-machine/content';
 import lesson from '../../../../content/modules/intro-visual-reasoning.json';
 import Discovery from '../components/Discovery.tsx';
+import TutorPanel from '../components/TutorPanel.tsx';
 import '../styles/global.css';
 const compiled=compileLearningModule(lesson);
+const hypothesisNode=lesson.nodes.find((n)=>n.stage==='hypothesis');
+const tutorNode={stage:hypothesisNode.stage,prompt:hypothesisNode.prompt,hints:hypothesisNode.hints??[]};
+const tutorEvidence=[{id:'lesson-goal',kind:'authored',text:'The lesson asks how a camera could hide one symbol while leaving the rest of the frame visible.'},{id:'masking-lab',kind:'authored',text:'The vision lab compares selective, blanket and known-position masking on generated pixels.'}];
 ---
 <!doctype html>
 <html lang="en">
@@ -19,6 +23,7 @@ const compiled=compileLearningModule(lesson);
 <h1 id="intro-title">Learning begins with a question, not an answer.</h1>
 <p class="lede">Try your own solution. Predict what will happen. Explore alternatives and change your mind—or explain why you wouldn't. There is no political agreement score.</p></section>
 <Discovery client:load compiled={compiled}/>
+<TutorPanel client:visible node={tutorNode} evidence={tutorEvidence}/>
 <p><a href="/vision">Build a reproducible geometric scene in the vision laboratory →</a></p>
 <p><a href="/shapes">Create your own training examples in the drawing laboratory →</a></p>
 <p><a href="/model">Open a trained neural network and inspect what it stored →</a></p>
