@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:40:11Z",
+  "observedAt": "2026-11-15T19:45:17Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -2074,8 +2074,12 @@
       "scope": [
         "Support local restore, explicit clear and portable learning journey"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-090",
@@ -2093,8 +2097,12 @@
       "scope": [
         "Author simpler explanations, translation catalog and original-source distinctions"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-091",
@@ -2139,8 +2147,12 @@
       "scope": [
         "Optimize loading, cancel heavy tasks, route around unsupported GPU/audio"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-093",
@@ -2160,15 +2172,21 @@
       "scope": [
         "Harden CSP, upload handling, workers, credentials, auth and media defaults"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-094",
       "title": "Independent hosting, deploy and recovery drills",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        69
+      ],
       "dependsOn": [
         "TLM-085",
         "TLM-092",
@@ -2178,8 +2196,10 @@
       "scope": [
         "Provision this project's CDN/static site, optional API, staging and rollback"
       ],
-      "legacyStatus": "planned",
-      "legacyEvidence": []
+      "legacyStatus": "in_progress",
+      "legacyEvidence": [
+        "Recovery drill 2026-11-15 via Render API on srv-dbsvitjbc2fs73cmp7lg: deploy dep-dbt0mmlckfvc73ceihg0 (883853f) live, rollback dep-dbt0n1c9v7es73bsh3t0 to 6dbb9d3 live, roll-forward dep-dbt0n3s9v7es73bshb6g live. API srv-dbt0iu3l550s739mr5m0 live with /health. Staging service and live-origin browser smoke not yet done."
+      ]
     },
     {
       "id": "TLM-095",
@@ -2931,10 +2951,22 @@
       "id": 5326422608,
       "number": 68,
       "title": "TLM-089/090/092/093: Local progress, plain-language text, offline/perf budgets, security headers (+TLM-091 automated a11y)",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "createdAt": "2026-11-15T19:40:02Z",
-      "updatedAt": "2026-11-15T19:40:06Z",
+      "updatedAt": "2026-11-15T19:43:14Z",
+      "mergedAt": "2026-11-15T19:43:14Z",
+      "closedAt": "2026-11-15T19:43:14Z",
+      "draft": false
+    },
+    {
+      "id": 5326469752,
+      "number": 69,
+      "title": "Record P11 evidence and the first hosting recovery drill",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/69",
+      "createdAt": "2026-11-15T19:45:14Z",
+      "updatedAt": "2026-11-15T19:45:14Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false

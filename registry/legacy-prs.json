@@ -2142,11 +2142,15 @@
         "No account is required and removed application state is not silently restored",
         "Import/export, corruption and deletion tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 68,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "883853fa18b927b998623b9ec183d3e510a74e6d",
+      "verification_evidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-090",
@@ -2161,11 +2165,15 @@
         "Translations never silently replace official legal authority",
         "Missing-locale and source-equivalence tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 68,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "883853fa18b927b998623b9ec183d3e510a74e6d",
+      "verification_evidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-091",
@@ -2207,11 +2215,15 @@
         "Core experiences work in low-power and optional-service-offline modes",
         "Reference browsers and performance budgets pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 68,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "883853fa18b927b998623b9ec183d3e510a74e6d",
+      "verification_evidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-093",
@@ -2228,11 +2240,15 @@
         "No unresolved serious release-scope vulnerability remains",
         "Automated negative security and privacy evidence passes"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 68,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "883853fa18b927b998623b9ec183d3e510a74e6d",
+      "verification_evidence": [
+        "PR #68 head c7bfe25a3868a880f00eda0681d535accb475b98 passed workspace-and-foundation run 43753718095: pnpm check (324 tests, perf budget, catalog check) and 132 Playwright tests across Chromium desktop, Pixel 5 emulation and Firefox.",
+        "Security headers from apps/web/security-headers.json applied to Render static site srv-dbsvitjbc2fs73cmp7lg via the Render headers API; threat model is the project own review, not an independent audit.",
+        "PR #68 squash-merged as 883853fa18b927b998623b9ec183d3e510a74e6d."
+      ]
     },
     {
       "id": "TLM-094",
@@ -2248,11 +2264,13 @@
         "Staging deploy and restored previous release work without other products",
         "Deployment and rollback smoke against actual origin passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_progress",
+      "github_pr_number": 69,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/69",
       "merged_commit": null,
-      "verification_evidence": []
+      "verification_evidence": [
+        "Recovery drill 2026-11-15 via Render API on srv-dbsvitjbc2fs73cmp7lg: deploy dep-dbt0mmlckfvc73ceihg0 (883853f) live, rollback dep-dbt0n1c9v7es73bsh3t0 to 6dbb9d3 live, roll-forward dep-dbt0n3s9v7es73bshb6g live. API srv-dbt0iu3l550s739mr5m0 live with /health. Staging service and live-origin browser smoke not yet done."
+      ]
     },
     {
       "id": "TLM-095",
