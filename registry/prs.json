@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:15:37Z",
+  "observedAt": "2026-11-15T19:22:19Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1689,7 +1689,9 @@
       "title": "Compound visitor policy rules and validation",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-052",
         "TLM-055",
@@ -1699,7 +1701,7 @@
       "scope": [
         "Support nested conditions and annotations without arbitrary code"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1707,7 +1709,9 @@
       "title": "Accessible rule authoring interface",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-055",
         "TLM-073"
@@ -1716,7 +1720,7 @@
       "scope": [
         "Build terms, exclusions, carveouts, previews, undo and keyboard navigation"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1724,7 +1728,9 @@
       "title": "Multi-policy same-scenario comparison",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-054",
         "TLM-073",
@@ -1734,7 +1740,7 @@
       "scope": [
         "Run present law, proposal and visitor rules on identical facts"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1742,7 +1748,9 @@
       "title": "Tradeoff and uncertainty visualizations",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-070",
         "TLM-075"
@@ -1751,7 +1759,7 @@
       "scope": [
         "Show rights, burdens, exceptions, indeterminate outcomes and actor impact"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1759,7 +1767,9 @@
       "title": "Symmetric adversarial stress-test harness",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-015",
         "TLM-062",
@@ -1769,7 +1779,7 @@
       "scope": [
         "Challenge any policy with its concrete flaws and counterexamples"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1777,7 +1787,9 @@
       "title": "Rule history, alternate forks and portable exports",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-074",
         "TLM-075",
@@ -1787,7 +1799,7 @@
       "scope": [
         "Enable revision, comparisons and local export of original user hypotheses"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1795,7 +1807,9 @@
       "title": "Module 7: Write the Law",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-073",
         "TLM-074",
@@ -1809,7 +1823,7 @@
       "scope": [
         "Create real proposed-law challenge and counterexample-driven revision"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1817,7 +1831,9 @@
       "title": "Module 8: Right to Learn capstone",
       "phase": "P9",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "dependsOn": [
         "TLM-064",
         "TLM-072",
@@ -1828,7 +1844,7 @@
       "scope": [
         "Integrate technical, legal and economic evidence in novel transfer exercises"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2801,6 +2817,18 @@
       "updatedAt": "2026-11-15T19:15:34Z",
       "mergedAt": "2026-11-15T19:15:34Z",
       "closedAt": "2026-11-15T19:15:34Z",
+      "draft": false
+    },
+    {
+      "id": 5326265553,
+      "number": 66,
+      "title": "TLM-073..080: Write the Law studio and Right to Learn capstone",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
+      "createdAt": "2026-11-15T19:22:17Z",
+      "updatedAt": "2026-11-15T19:22:18Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]

@@ -1769,9 +1769,9 @@
         "Rule meaning survives export, import and edited cases",
         "Compiler and boundary tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1788,9 +1788,9 @@
         "Visitor can create substantively different legislation",
         "Multiple-policy UI golden cases pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1808,9 +1808,9 @@
         "Results expose exactly which altered rule changed outcome",
         "Deterministic differential runs pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1827,9 +1827,9 @@
         "No political morality or compliance score is fabricated",
         "Assumption and accessible chart tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1847,9 +1847,9 @@
         "Rules aligned with proposed law receive no easier evaluation",
         "Neutrality and corner-case fixtures pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1867,9 +1867,9 @@
         "Learner revises without losing older experiment evidence",
         "History replay and local-only roundtrip tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1891,9 +1891,9 @@
         "Multiple valid dissenting drafts can complete module",
         "E2E authoring and disagreement paths pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1912,9 +1912,9 @@
         "Success requires reasoning, never support for sponsor's policy",
         "Transfer-rubric and alternative-view acceptance pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 66,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "merged_commit": null,
       "verification_evidence": []
     },
