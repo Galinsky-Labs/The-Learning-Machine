@@ -9,6 +9,7 @@ A wholly independent, browser-first **Socratic learning environment** for the pr
 - [Canonical PR work registry](registry/prs.json) and [registry contract](registry/PR_FORMAT.md)
 - [Testing](docs/TEST_STRATEGY.md), [Privacy](docs/SECURITY_PRIVACY.md), [Release gates](docs/RELEASE_GATES.md)
 - [Developer/agent instructions](AGENTS.md)
+- [Hosting](docs/HOSTING.md): <https://the-learning-machine.onrender.com>
 
 ## Foundation scope
 

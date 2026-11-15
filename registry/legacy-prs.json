@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "repository": "neophilism/The-Learning-Machine",
+  "repository": "Galinsky-Labs/The-Learning-Machine",
   "project": "The Learning Machine",
   "roadmap_version": "2026-10-19",
   "status_policy": "PRs are planned only until actually written, tested, merged and verified. No acceptance by documentation alone.",
@@ -91,11 +91,11 @@
       ],
       "status": "merged",
       "github_pr_number": 1,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/1",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/1",
       "merged_commit": "bf9c10e9f8d553a164b493920c2e5a85aeaeeca0",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39289389096",
-        "https://github.com/neophilism/The-Learning-Machine/pull/1"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39289389096",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/1"
       ]
     },
     {
@@ -112,11 +112,11 @@
       ],
       "status": "merged",
       "github_pr_number": 2,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/2",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/2",
       "merged_commit": "85fdb2680dc34af53f2421b10818ff1d3c9722c7",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39294200581",
-        "https://github.com/neophilism/The-Learning-Machine/pull/2"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39294200581",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/2"
       ]
     },
     {
@@ -133,11 +133,11 @@
       ],
       "status": "merged",
       "github_pr_number": 3,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/3",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/3",
       "merged_commit": "c3d9bb18a1c2ec3035b44239d3956b9cfda7a5c1",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39294751705",
-        "https://github.com/neophilism/The-Learning-Machine/pull/3"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39294751705",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/3"
       ]
     },
     {
@@ -154,11 +154,11 @@
       ],
       "status": "merged",
       "github_pr_number": 4,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/4",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/4",
       "merged_commit": "8011ccb297ae3c8d5922fe6f41340d83730ea468",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39295203852",
-        "https://github.com/neophilism/The-Learning-Machine/pull/4"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39295203852",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/4"
       ]
     },
     {
@@ -176,11 +176,11 @@
       ],
       "status": "merged",
       "github_pr_number": 5,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/5",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/5",
       "merged_commit": "6e36fbc51617975af0bbff360844c7cc85ab843c",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39295607409",
-        "https://github.com/neophilism/The-Learning-Machine/pull/5"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39295607409",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/5"
       ]
     },
     {
@@ -198,11 +198,11 @@
       ],
       "status": "merged",
       "github_pr_number": 6,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/6",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/6",
       "merged_commit": "78920a77cc9053b1642b3f5a67d3ca86212e0700",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39295989726",
-        "https://github.com/neophilism/The-Learning-Machine/pull/6"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39295989726",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/6"
       ]
     },
     {
@@ -220,11 +220,11 @@
       ],
       "status": "merged",
       "github_pr_number": 7,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/7",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/7",
       "merged_commit": "4eb9f75bc34ed496a9f79e0be2e8d426c050348c",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39297448911",
-        "https://github.com/neophilism/The-Learning-Machine/pull/7"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39297448911",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/7"
       ]
     },
     {
@@ -246,11 +246,11 @@
       ],
       "status": "merged",
       "github_pr_number": 8,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/8",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/8",
       "merged_commit": "7be7c5cf28bb9f9b5379bcdac257f1b0cfa21733",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39298075673",
-        "https://github.com/neophilism/The-Learning-Machine/pull/8"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39298075673",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/8"
       ]
     },
     {
@@ -268,10 +268,10 @@
       ],
       "status": "merged",
       "github_pr_number": 9,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/9",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/9",
       "merged_commit": "3b844033e3b340fc4dda22865155607d46dda2b7",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39298452158"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39298452158"
       ]
     },
     {
@@ -289,10 +289,10 @@
       ],
       "status": "merged",
       "github_pr_number": 15,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/15",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/15",
       "merged_commit": "457b8c8ad80eaa6504fdaf98e1caa3103a696868",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39302222199"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39302222199"
       ]
     },
     {
@@ -311,10 +311,10 @@
       ],
       "status": "merged",
       "github_pr_number": 17,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/17",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/17",
       "merged_commit": "1f51270c439d0b7d95811f0511a85267a5f0f58a",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39303410288"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39303410288"
       ]
     },
     {
@@ -332,10 +332,10 @@
       ],
       "status": "merged",
       "github_pr_number": 18,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/18",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/18",
       "merged_commit": "455c6534a6c7e640abfc3aac13a34239aa829524",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39304057045"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39304057045"
       ]
     },
     {
@@ -354,10 +354,10 @@
       ],
       "status": "merged",
       "github_pr_number": 20,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/20",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/20",
       "merged_commit": "056b2bd49ad45d3a754a80ee250e8657a57ba7a0",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39305002208"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39305002208"
       ]
     },
     {
@@ -374,10 +374,10 @@
       ],
       "status": "merged",
       "github_pr_number": 23,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/23",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/23",
       "merged_commit": "5cdd8058be9b7ba8c797c853a446a40a6f2ac109",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39306750243"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39306750243"
       ]
     },
     {
@@ -395,11 +395,11 @@
       ],
       "status": "merged",
       "github_pr_number": 24,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/24",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/24",
       "merged_commit": "03d3f23323aba6d4bc0e54da314f3b0a230ace8e",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39384194746",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39384389775"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39384194746",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39384389775"
       ]
     },
     {
@@ -417,11 +417,11 @@
       ],
       "status": "merged",
       "github_pr_number": 25,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/25",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/25",
       "merged_commit": "a1535fb57288af439959a0a96b04198a5e9e6a76",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39384984445",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39385161188"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39384984445",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39385161188"
       ]
     },
     {
@@ -439,7 +439,7 @@
       ],
       "status": "merged",
       "github_pr_number": 26,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/26",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/26",
       "merged_commit": "3cea971832238fc0f1811ac51ea79f43f33e79d2",
       "verification_evidence": [
         "Local Node vision-scene tests passed 4/4.",
@@ -462,7 +462,7 @@
       ],
       "status": "merged",
       "github_pr_number": 27,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/27",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/27",
       "merged_commit": "50f4b4fcf8bec17338478a94adf1bcbe08031ab9",
       "verification_evidence": [
         "Local TLM-018 reference-frame tests passed 4/4.",
@@ -485,13 +485,13 @@
       ],
       "status": "merged",
       "github_pr_number": 28,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/28",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/28",
       "merged_commit": "7fd5a7ced90911fcae120e1d566f743697e1b319",
       "verification_evidence": [
         "Local TLM-019 golden recognizer tests passed 4/4.",
         "Exact-head workspace-and-foundation run 39390431302 passed for ce698e9d13d2ec4c7a400f3631322d74bb364c01: frozen install, repository checks/build, and full desktop/mobile Chromium suite.",
         "Merged-main workspace-and-foundation run 39390685667 passed for 7fd5a7ced90911fcae120e1d566f743697e1b319.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/28"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/28"
       ]
     },
     {
@@ -508,13 +508,13 @@
       ],
       "status": "merged",
       "github_pr_number": 29,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/29",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/29",
       "merged_commit": "1bf010f8c6a219b751729dcc8d904257689a5f0c",
       "verification_evidence": [
         "Local JavaScript syntax validation passed for the TLM-020 runtime and tests.",
         "Exact-head workspace-and-foundation run 39391642961 passed for 42c059ff2e8ac74d32cbfeae086e64a6812b16f4: frozen install, repository checks/build, and full desktop/mobile Chromium suite.",
         "Merged-main workspace-and-foundation run 39391928226 passed for 1bf010f8c6a219b751729dcc8d904257689a5f0c.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/29"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/29"
       ]
     },
     {
@@ -532,12 +532,12 @@
       ],
       "status": "merged",
       "github_pr_number": 30,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/30",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/30",
       "merged_commit": "523d6e94de9b8f2d38ae086f664c72287c1c9cc9",
       "verification_evidence": [
         "Exact-head workspace-and-foundation run 39393060348 passed for fdf92376e9c25468f21053ddd28cde6b249379e2: frozen install, full repository checks/build, and complete desktop/mobile Chromium suite.",
         "Merged-main workspace-and-foundation run 39393273408 passed for 523d6e94de9b8f2d38ae086f664c72287c1c9cc9.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/30"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/30"
       ]
     },
     {
@@ -556,12 +556,12 @@
       ],
       "status": "merged",
       "github_pr_number": 31,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/31",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/31",
       "merged_commit": "1d68effb7f349dd9991428614e29d6764f66dc94",
       "verification_evidence": [
         "Exact-head workspace-and-foundation run 39394648219 passed for f8c73403efabfe59e37c4e17c3973921a9200207: frozen install, 144 Node tests, strict TypeScript, production build, repository checks and all 32 desktop/mobile Chromium cases.",
         "Merged-main workspace-and-foundation run 39394888227 passed for 1d68effb7f349dd9991428614e29d6764f66dc94.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/31"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/31"
       ]
     },
     {
@@ -578,12 +578,12 @@
       ],
       "status": "merged",
       "github_pr_number": 32,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/32",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/32",
       "merged_commit": "2005fd3179920265d2cfc360b798156d4c861dca",
       "verification_evidence": [
         "Exact-head workspace-and-foundation run 39397011091 passed for 7ccf2cca2c62a5af6831a5d0844df9acfaae3a51: frozen install, 148 Node tests, strict TypeScript, production build, repository checks and all 36 desktop/mobile Chromium cases.",
         "Merged-main workspace-and-foundation run 39397248362 passed for 2005fd3179920265d2cfc360b798156d4c861dca.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/32"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/32"
       ]
     },
     {
@@ -605,12 +605,12 @@
       ],
       "status": "merged",
       "github_pr_number": 33,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/33",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/33",
       "merged_commit": "5adf9cbf53d50c5d849e663e9bdff2e1c4dd7bfa",
       "verification_evidence": [
         "Exact-head workspace-and-foundation run 39398542870 passed for 5a4425870ac845374f4a4946d669061e5458333f: frozen install, 148 Node tests, strict TypeScript, production build, content/boundary/secret/legal checks and all 38 desktop/mobile Chromium cases.",
         "Merged-main workspace-and-foundation run 39398816774 passed for 5adf9cbf53d50c5d849e663e9bdff2e1c4dd7bfa.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/33"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/33"
       ]
     },
     {
@@ -628,10 +628,10 @@
       ],
       "status": "merged",
       "github_pr_number": 19,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/19",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/19",
       "merged_commit": "5dc8d1ba156e9e7b5a8a80b72fd80cacfbfd7e94",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39305097378"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39305097378"
       ]
     },
     {
@@ -649,11 +649,11 @@
       ],
       "status": "merged",
       "github_pr_number": 21,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/21",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/21",
       "merged_commit": "69cf895021b8c722dffb068b4aa96bb829800e87",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39382215960",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39382473295"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39382215960",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39382473295"
       ]
     },
     {
@@ -672,11 +672,11 @@
       ],
       "status": "merged",
       "github_pr_number": 22,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/22",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/22",
       "merged_commit": "aa0f376ed2de3892eebc0061b9338073503c1740",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39383085702",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39383256679"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39383085702",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39383256679"
       ]
     },
     {
@@ -693,12 +693,12 @@
       ],
       "status": "merged",
       "github_pr_number": 34,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/34",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/34",
       "merged_commit": "a963792376181c6fc22f043287e7fc2b8a065186",
       "verification_evidence": [
         "Exact-head workspace-and-foundation run 39399837544 passed for af16c68ea7417d98b9a8ab69a5570aab2a016fce: frozen install, 150 Node tests, strict TypeScript, production build, repository checks and all 40 desktop/mobile Chromium cases.",
         "Merged-main workspace-and-foundation run 39400070882 passed for a963792376181c6fc22f043287e7fc2b8a065186.",
-        "https://github.com/neophilism/The-Learning-Machine/pull/34"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/34"
       ]
     },
     {
@@ -716,12 +716,12 @@
       ],
       "status": "merged",
       "github_pr_number": 35,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/35",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/35",
       "merged_commit": "a68c73ad673a612e77fafbe13d61c6c4613d65db",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39402070543",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39402408485",
-        "https://github.com/neophilism/The-Learning-Machine/pull/35"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39402070543",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39402408485",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/35"
       ]
     },
     {
@@ -740,11 +740,11 @@
       ],
       "status": "merged",
       "github_pr_number": 37,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/37",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/37",
       "merged_commit": "ee0bd2de2de9e687ff1cdd549f699790257949a4",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40182467147",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40182618749"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40182467147",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40182618749"
       ]
     },
     {
@@ -762,12 +762,12 @@
       ],
       "status": "merged",
       "github_pr_number": 38,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/38",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/38",
       "merged_commit": "1c3d671b1f83af73359e76dc3aea7fede3143085",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40183051733",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40183157114",
-        "https://github.com/neophilism/The-Learning-Machine/pull/38"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40183051733",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40183157114",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/38"
       ]
     },
     {
@@ -791,12 +791,12 @@
       ],
       "status": "merged",
       "github_pr_number": 39,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/39",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/39",
       "merged_commit": "d5799f369de5bfc45c024328ae685719ac8349c5",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40279909366",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40280106655",
-        "https://github.com/neophilism/The-Learning-Machine/pull/39"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40279909366",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40280106655",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/39"
       ]
     },
     {
@@ -971,10 +971,10 @@
       ],
       "status": "merged",
       "github_pr_number": 12,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/12",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/12",
       "merged_commit": "e0d76bf482ffb0c1484f5738f59976ea59f5b8b2",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39298988741"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39298988741"
       ]
     },
     {
@@ -991,10 +991,10 @@
       ],
       "status": "merged",
       "github_pr_number": 13,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/13",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/13",
       "merged_commit": "b4b0e03e5b4e6b905a839f2a844b9bc4e13748bf",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39299413234"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39299413234"
       ]
     },
     {
@@ -1012,10 +1012,10 @@
       ],
       "status": "merged",
       "github_pr_number": 16,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/16",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/16",
       "merged_commit": "2527ab8117897558a360696fafe07aa394925006",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39302593254"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39302593254"
       ]
     },
     {
@@ -1033,12 +1033,12 @@
       ],
       "status": "merged",
       "github_pr_number": 40,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/40",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/40",
       "merged_commit": "c375beafb7acc071b86ab92727ce0489c07f322a",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40652195915",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40652466146",
-        "https://github.com/neophilism/The-Learning-Machine/pull/40"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40652195915",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40652466146",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/40"
       ]
     },
     {
@@ -1056,12 +1056,12 @@
       ],
       "status": "merged",
       "github_pr_number": 42,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/42",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/42",
       "merged_commit": "db4b6d59f2cb778b9e6b866b73419ec207b50116",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40654595078",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40654932941",
-        "https://github.com/neophilism/The-Learning-Machine/pull/42"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40654595078",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40654932941",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/42"
       ]
     },
     {
@@ -1079,12 +1079,12 @@
       ],
       "status": "merged",
       "github_pr_number": 43,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/43",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/43",
       "merged_commit": "314706a47f292ec866206f08ebf97a844db2ffb1",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40657213535",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40657558401",
-        "https://github.com/neophilism/The-Learning-Machine/pull/43"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40657213535",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40657558401",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/43"
       ]
     },
     {
@@ -1107,12 +1107,12 @@
       ],
       "status": "merged",
       "github_pr_number": 44,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/44",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/44",
       "merged_commit": "6e8a5511a7790065bd8cade10699723c41d5b1d0",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40659199997",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40659457816",
-        "https://github.com/neophilism/The-Learning-Machine/pull/44"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40659199997",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40659457816",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/44"
       ]
     },
     {
@@ -1131,12 +1131,12 @@
       ],
       "status": "merged",
       "github_pr_number": 45,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/45",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/45",
       "merged_commit": "d54feb8526939a00b3dc2b60135c3f6233f21ed2",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40660664685",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40660970365",
-        "https://github.com/neophilism/The-Learning-Machine/pull/45"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40660664685",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40660970365",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/45"
       ]
     },
     {
@@ -1153,11 +1153,11 @@
       ],
       "status": "merged",
       "github_pr_number": 14,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/14",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/14",
       "merged_commit": "2e55e483ef8f704fccf15d9927e1e8aa6b2c67db",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39383633656",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/39383847138"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39383633656",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/39383847138"
       ]
     },
     {
@@ -1174,11 +1174,11 @@
       ],
       "status": "merged",
       "github_pr_number": 46,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/46",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/46",
       "merged_commit": "85490341be1cddecea3eacae29c63a9a6a9b1015",
       "verification_evidence": [
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40664051372",
-        "https://github.com/neophilism/The-Learning-Machine/actions/runs/40664388101"
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40664051372",
+        "https://github.com/Galinsky-Labs/The-Learning-Machine/actions/runs/40664388101"
       ]
     },
     {
@@ -1196,7 +1196,7 @@
       ],
       "status": "merged",
       "github_pr_number": 47,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/47",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/47",
       "merged_commit": "83a183341cad64112b78a2da13f512bfd22d40e5",
       "verification_evidence": [
         "Exact-head workspace-and-foundation run 40666580771 passed for ab818976d47386c96adaa52d29039245d7858dc3.",
@@ -1219,7 +1219,7 @@
       ],
       "status": "merged",
       "github_pr_number": 49,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/49",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/49",
       "merged_commit": "889126a66511e41fbdfe798a86081b643300d577",
       "verification_evidence": [
         "Initial implementation PR #48 exact head 0d942875860ded4a7886c177cccae8b1113a7305 passed run 40667899297 and squash-merged as cbe4ef95ac40d46150d958386a403f69ab8feb65.",
@@ -1245,7 +1245,7 @@
       ],
       "status": "merged",
       "github_pr_number": 50,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/50",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/50",
       "merged_commit": "6b384bb5f1686ea2a640d47bed8fdb4cc62157ee",
       "verification_evidence": [
         "Draft PR #50 opened after 25 focused contract, compiler and evaluator tests plus syntax checks passed locally.",
@@ -1271,7 +1271,7 @@
       ],
       "status": "merged",
       "github_pr_number": 51,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/51",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/51",
       "merged_commit": "8b7d733a29c9ab90de930ccaa186738319f8d781",
       "verification_evidence": [
         "Draft PR #51 opened from verified canonical main after 18 focused compiler, current-law evaluator, and framework-comparison tests passed locally.",
@@ -1298,7 +1298,7 @@
       ],
       "status": "merged",
       "github_pr_number": 52,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/52",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/52",
       "merged_commit": "b3de190b0952d3ce381816c9767a81f6992ed396",
       "verification_evidence": [
         "Final exact PR head ab8c9e89f68e778e5179e0778512a9bc59f59d32 passed workspace-and-foundation run 41336163840: frozen install, 202 foundation tests, TypeScript, production build, repository checks, and all 58 desktop/mobile browser cases.",
@@ -1325,7 +1325,7 @@
       ],
       "status": "merged",
       "github_pr_number": 53,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/53",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/53",
       "merged_commit": "ac93d3fe70c9b57558e6f8a62687e37e4accd7b4",
       "verification_evidence": [
         "Behavior head 1bb8684a65b2cdef2c51154c2c34ec29301c0894 passed workspace-and-foundation run 41337051324 after final review added postdated-authority rejection.",
@@ -1350,7 +1350,7 @@
       ],
       "status": "merged",
       "github_pr_number": 54,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/54",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/54",
       "merged_commit": "bf2b4385ba8a3bed783e89ed9a6db1683b5a1d0a",
       "verification_evidence": [
         "Hardened behavior head 503ab2ad0a3f4e455cfa85065add8324c63e6573 passed workspace-and-foundation run 41338225166 after final review required curated source registration.",
@@ -1375,7 +1375,7 @@
       ],
       "status": "merged",
       "github_pr_number": 56,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/56",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/56",
       "merged_commit": "717d2c43471862e8c5409a919de6fac49a70bf4e",
       "verification_evidence": [
         "Draft PR #56 opened from canonical main 6419266f1148af1098f6af7c767f55d04bc718ff.",
@@ -1401,7 +1401,7 @@
       ],
       "status": "merged",
       "github_pr_number": 58,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/58",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/58",
       "merged_commit": "2c0a0e87f6153ca7f4363fa039e9132fc58aaba6",
       "verification_evidence": [
         "Draft PR #58 opened from verified canonical main d1dee7650e87f0b67ba6432a2ac6d3d2d14fb63a.",
@@ -1428,7 +1428,7 @@
       ],
       "status": "merged",
       "github_pr_number": 60,
-      "github_pr_url": "https://github.com/neophilism/The-Learning-Machine/pull/60",
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/60",
       "merged_commit": "29a51fc4a83f7e800f84e5db5aae05556e910fab",
       "verification_evidence": [
         "Draft PR #60 opened from fully verified canonical main 63a526fad0788f880b0ed1fef109e28990e5e00d.",

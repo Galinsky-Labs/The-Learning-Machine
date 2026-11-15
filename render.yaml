@@ -1,0 +1,14 @@
+# Render Blueprint documenting the independent public hosting for The Learning Machine.
+# The static site is the complete public learning experience; it needs no API, database or keys.
+services:
+  - type: web
+    runtime: static
+    name: the-learning-machine
+    repo: https://github.com/Galinsky-Labs/The-Learning-Machine
+    branch: main
+    autoDeploy: true
+    buildCommand: npx --yes pnpm@11.25.0 install --frozen-lockfile && npx --yes pnpm@11.25.0 build
+    staticPublishPath: apps/web/dist
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
