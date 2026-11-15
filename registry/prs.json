@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T18:57:07Z",
+  "observedAt": "2026-11-15T19:06:57Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -790,8 +790,11 @@
       "scope": [
         "Demonstrate application-store cleanup versus retained learned model"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-036",
@@ -834,8 +837,11 @@
       "scope": [
         "Instrument real processing steps and distinguish illustrations"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-038",
@@ -854,8 +860,11 @@
       "scope": [
         "Present novel tasks that distinguish rule transfer from rote memory"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-039",
@@ -875,8 +884,11 @@
       "scope": [
         "Teach parameters, source disposal, reconstructability and generalization"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-040",
@@ -895,8 +907,11 @@
       "scope": [
         "Bound memory, time, workers and offer honest low-power alternatives"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #63 head cbdad378d8bec80028cee9cda667f0cbb6951fd8 passed workspace-and-foundation run 43749631867 (pnpm check with 18 new learning-lab tests; Playwright desktop+mobile model-lab, model-retention and model-lesson specs).",
+        "PR #63 squash-merged as 317785f7a22b03cf810e297c56137263e78c82e9."
+      ]
     },
     {
       "id": "TLM-041",
@@ -1385,7 +1400,9 @@
       "title": "Models, archives, output infringement and memorization",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-035",
         "TLM-049",
@@ -1396,7 +1413,7 @@
       "scope": [
         "Compare learned parameters, retrievable expression, permanent archive and output liability"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1404,7 +1421,9 @@
       "title": "Eighteen-context adversarial legal case library",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-055",
         "TLM-056",
@@ -1418,7 +1437,7 @@
       "scope": [
         "Cover filtering, accessibility, caching, networks, search and other described cases"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1426,7 +1445,9 @@
       "title": "Legal truth-layer and source inspector",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-049",
         "TLM-050",
@@ -1437,7 +1458,7 @@
       "scope": [
         "Separate present statutes, interpretations, hypothetical rules, proposed law and independent rights"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1445,7 +1466,9 @@
       "title": "Complete education and acquisition lessons",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-057",
         "TLM-058",
@@ -1460,7 +1483,7 @@
       "scope": [
         "Publish Modules 4–5 with valid disagreement and alternative paths"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2692,10 +2715,22 @@
       "id": 5326032538,
       "number": 63,
       "title": "TLM-035/037/038/039/040: Retention, microscope, transfer, Module 3 and device limits",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/63",
       "createdAt": "2026-11-15T18:57:05Z",
-      "updatedAt": "2026-11-15T18:57:05Z",
+      "updatedAt": "2026-11-15T19:00:16Z",
+      "mergedAt": "2026-11-15T19:00:16Z",
+      "closedAt": "2026-11-15T19:00:16Z",
+      "draft": false
+    },
+    {
+      "id": 5326118638,
+      "number": 64,
+      "title": "TLM-061/062/063/064: Model/output law, case library, truth layers and legal lessons",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/64",
+      "createdAt": "2026-11-15T19:06:56Z",
+      "updatedAt": "2026-11-15T19:06:56Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
