@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:29:19Z",
+  "observedAt": "2026-11-15T19:35:00Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1886,8 +1886,12 @@
       "scope": [
         "Implement independent secure admin auth with MFA for privileged publication"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-082",
@@ -1905,8 +1909,12 @@
       "scope": [
         "Edit question graphs, media, accessibility routes and scenarios before release"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-083",
@@ -1925,8 +1933,12 @@
       "scope": [
         "Review exact U.S. authorities, quoted spans, holdings and legal-status labels"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-084",
@@ -1944,8 +1956,12 @@
       "scope": [
         "Track authorized original audio/video and bounded publisher uploads"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-085",
@@ -1964,8 +1980,12 @@
       "scope": [
         "Publish hash-bound release bundles atomically with rollback"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-086",
@@ -1983,8 +2003,12 @@
       "scope": [
         "Offer constrained voluntary question help backed by offline deterministic fallback"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-087",
@@ -2002,8 +2026,12 @@
       "scope": [
         "Validate AI output format, lesson evidence, uncertainty and permitted question roles"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-088",
@@ -2022,8 +2050,12 @@
       "scope": [
         "Minimize optional data sharing, rate-limit, timeout and cancel safely"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #67 head d815f45663688f7ee6683cdd5f1cd81460d83fae passed workspace-and-foundation run 43752992561 (pnpm check incl. 12 API tests with the Postgres store test against a CI Postgres 17 service; Playwright desktop+mobile tutor spec).",
+        "No AI provider key is configured; the tutor is verified only through tests with injected providers and its offline route. The Anthropic provider is the suggested option pending the owner decision.",
+        "PR #67 squash-merged as 9ff273fc27fd3617c1c26d5f7c08057fca0debe0."
+      ]
     },
     {
       "id": "TLM-089",
@@ -2875,12 +2907,12 @@
       "id": 5326329002,
       "number": 67,
       "title": "TLM-081..088: Optional publisher API and consent-gated tutor",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "createdAt": "2026-11-15T19:29:18Z",
-      "updatedAt": "2026-11-15T19:29:18Z",
-      "mergedAt": null,
-      "closedAt": null,
+      "updatedAt": "2026-11-15T19:34:58Z",
+      "mergedAt": "2026-11-15T19:34:58Z",
+      "closedAt": "2026-11-15T19:34:58Z",
       "draft": false
     }
   ]
