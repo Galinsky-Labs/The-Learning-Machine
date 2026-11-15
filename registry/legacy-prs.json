@@ -812,11 +812,15 @@
         "Backend can be disabled without losing the lesson",
         "Fallback, timing and tolerance tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 62,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "baf1bc2d97987c1a3ba62153fdeec98adda3c811",
+      "verification_evidence": [
+        "PR #62 head 9d0bf2707c1b89c939b6315ccd795fd4f32378d7 passed workspace-and-foundation run 43749172040 (pnpm check incl. 15 new learning-lab tests, Playwright desktop+mobile model-lab specs).",
+        "TF.js CPU backend parameters stayed within 1e-4 of the float64 reference; reference CPU golden checksum 46cb5413 pinned in tests.",
+        "PR #62 squash-merged as baf1bc2d97987c1a3ba62153fdeec98adda3c811."
+      ]
     },
     {
       "id": "TLM-034",
@@ -831,11 +835,15 @@
         "Visual states correspond to stored numerical parameters",
         "Serialize/deserialize parameter tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 62,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "baf1bc2d97987c1a3ba62153fdeec98adda3c811",
+      "verification_evidence": [
+        "PR #62 head 9d0bf2707c1b89c939b6315ccd795fd4f32378d7 passed workspace-and-foundation run 43749172040 (pnpm check incl. 15 new learning-lab tests, Playwright desktop+mobile model-lab specs).",
+        "TF.js CPU backend parameters stayed within 1e-4 of the float64 reference; reference CPU golden checksum 46cb5413 pinned in tests.",
+        "PR #62 squash-merged as baf1bc2d97987c1a3ba62153fdeec98adda3c811."
+      ]
     },
     {
       "id": "TLM-035",
@@ -870,11 +878,15 @@
         "Comparable runs explain true determinism limits",
         "CPU golden runs and GPU tolerance tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 62,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "baf1bc2d97987c1a3ba62153fdeec98adda3c811",
+      "verification_evidence": [
+        "PR #62 head 9d0bf2707c1b89c939b6315ccd795fd4f32378d7 passed workspace-and-foundation run 43749172040 (pnpm check incl. 15 new learning-lab tests, Playwright desktop+mobile model-lab specs).",
+        "TF.js CPU backend parameters stayed within 1e-4 of the float64 reference; reference CPU golden checksum 46cb5413 pinned in tests.",
+        "PR #62 squash-merged as baf1bc2d97987c1a3ba62153fdeec98adda3c811."
+      ]
     },
     {
       "id": "TLM-037",

@@ -36,6 +36,14 @@
     "./transfer": {
       "types": "./src/transfer.d.mts",
       "default": "./src/transfer.mjs"
+    },
+    "./device-limits": {
+      "types": "./src/device-limits.d.mts",
+      "default": "./src/device-limits.mjs"
+    },
+    "./model-lesson": {
+      "types": "./src/model-lesson.d.mts",
+      "default": "./src/model-lesson.mjs"
     }
   },
   "dependencies": {

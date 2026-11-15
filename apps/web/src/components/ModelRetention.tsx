@@ -5,6 +5,7 @@ import type {NeuralModel} from '../../../../packages/learning-lab/src/neural.mjs
 import {trainLinearClassifier,trainNearestExampleMemorizer} from '../../../../packages/learning-lab/src/classifier.mjs';
 import {createLocalTrainingStore,storeModel,disposeTrainingData,inspectStore,auditRetention} from '../../../../packages/learning-lab/src/retention.mjs';
 import type {TrainingStore} from '../../../../packages/learning-lab/src/retention.mjs';
+import {classifyWithNetwork} from '../../../../packages/learning-lab/src/neural.mjs';
 import {traceNetworkForward,validateMicroscopeTrace} from '../../../../packages/learning-lab/src/microscope.mjs';
 import {TRANSFER_TASKS,runTransferChallenge,recordTransferRevision} from '../../../../packages/learning-lab/src/transfer.mjs';
 import type {TransferModelKey,TransferResult} from '../../../../packages/learning-lab/src/transfer.mjs';
@@ -14,7 +15,8 @@ const KEYS:TransferModelKey[]=['memorizer','linear','network'];
 function Drawing({pixels,label}:{pixels:DrawingPixels;label:string}){
  return <svg viewBox="0 0 16 16" width="64" height="64" role="img" aria-label={label} className="mini-drawing">{pixels.map((v,i)=>v?<rect key={i} x={i%16} y={Math.floor(i/16)} width="1" height="1"/>:null)}</svg>;
 }
-export type RetentionProps={dataset:ShapeDataset;split:HoldoutSplit;network:NeuralModel;onProgress?:(step:'disposed'|'microscope'|'transfer'|'revised',detail?:string)=>void};
+export type RetentionEvent={type:'disposed';observations:{storeExampleCountAfterDisposal:number;networkPredictionUnchanged:boolean;memorizerExactCopies:number;networkExactCopies:null;confidenceGap:number}}|{type:'revised';revision:{readonly recordedAfterObservation:true;readonly revision:string}};
+export type RetentionProps={dataset:ShapeDataset;split:HoldoutSplit;network:NeuralModel;onProgress?:(event:RetentionEvent)=>void};
 export default function ModelRetention({dataset,split,network,onProgress}:RetentionProps){
  const models=useMemo(()=>({memorizer:trainNearestExampleMemorizer(dataset,split),linear:trainLinearClassifier(dataset,split),network}),[dataset,split,network]);
  const audits=useMemo(()=>KEYS.map(k=>[k,auditRetention(models[k],dataset,split)] as const),[models,dataset,split]);
@@ -25,10 +27,16 @@ export default function ModelRetention({dataset,split,network,onProgress}:Retent
  const trace=useMemo(()=>validateMicroscopeTrace(traceNetworkForward(network,probe.pixels)),[network,probe]);
  const [predictions,setPredictions]=useState<Record<string,Record<TransferModelKey,boolean>>>(()=>Object.fromEntries(TRANSFER_TASKS.map(t=>[t.id,{memorizer:true,linear:true,network:true}])));
  const [transfer,setTransfer]=useState<TransferResult|null>(null),[revisionText,setRevisionText]=useState(''),[cited,setCited]=useState(''),[revision,setRevision]=useState(''),[error,setError]=useState('');
- function dispose(){setStore(disposeTrainingData(store));onProgress?.('disposed')}
- function run(){const r=runTransferChallenge(models,predictions);setTransfer(r);setCited(r.unexpectedFailures[0]?.taskId??'');setRevision('');onProgress?.('transfer')}
+ function dispose(){
+  const probe=dataset.examples[0]!.pixels,before=classifyWithNetwork(network,probe).predictedLabel;
+  const next=disposeTrainingData(store);setStore(next);
+  const after=classifyWithNetwork(next.models.network as NeuralModel,probe).predictedLabel;
+  const memorizerAudit=audits.find(([k])=>k==='memorizer')![1],networkAudit=audits.find(([k])=>k==='network')![1];
+  onProgress?.({type:'disposed',observations:{storeExampleCountAfterDisposal:inspectStore(next).exampleCount,networkPredictionUnchanged:before===after,memorizerExactCopies:memorizerAudit.exactCopiesRecoverable??0,networkExactCopies:null,confidenceGap:networkAudit.confidenceGap??0}});
+ }
+ function run(){const r=runTransferChallenge(models,predictions);setTransfer(r);setCited(r.unexpectedFailures[0]?.taskId??'');setRevision('')}
  function revise(){
-  try{if(!transfer)return;const r=recordTransferRevision(transfer,revisionText,{citedTaskId:cited||undefined});setRevision(r.revision);setError('');onProgress?.('revised',r.revision)}
+  try{if(!transfer)return;const r=recordTransferRevision(transfer,revisionText,{citedTaskId:cited||undefined});setRevision(r.revision);setError('');onProgress?.({type:'revised',revision:r})}
   catch(e){setError(e instanceof Error?e.message:'Revision not recorded')}
  }
  return <div className="model-retention">
@@ -46,7 +54,7 @@ export default function ModelRetention({dataset,split,network,onProgress}:Retent
    <ul className="disclosures" aria-label="Retention disclosures">{report.disclosures.map(d=><li key={d}>{d}</li>)}</ul>
   </section>
   <section aria-labelledby="microscope-title"><h3 id="microscope-title">Microscope: one forward pass</h3>
-   <label>Drawing to trace <select value={probeId} onChange={e=>{setProbeId(e.target.value);onProgress?.('microscope')}}>{dataset.examples.map(e=><option key={e.id} value={e.id}>{e.id} ({e.label})</option>)}</select></label>
+   <label>Drawing to trace <select value={probeId} onChange={e=>setProbeId(e.target.value)}>{dataset.examples.map(e=><option key={e.id} value={e.id}>{e.id} ({e.label})</option>)}</select></label>
    <Drawing pixels={probe.pixels} label={`Drawing ${probe.id}, labelled ${probe.label}`}/>
    <table><caption>Executed steps and their provenance</caption><thead><tr><th scope="col">Step</th><th scope="col">Provenance</th><th scope="col">Result</th></tr></thead><tbody>
     {trace.steps.map(s=><tr key={s.id}><th scope="row">{s.label}</th><td><span className={`kind kind-${s.kind}`}>{s.kind}</span></td><td>
