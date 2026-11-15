@@ -1,5 +1,6 @@
 ---
 import ModelLesson from '../components/ModelLesson.tsx';
+import OfflineSupport from '../components/OfflineSupport.astro';
 import '../styles/global.css';
 ---
 <!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -8,4 +9,4 @@ import '../styles/global.css';
 <header class="site-header"><a class="brand" href="/">The Learning Machine</a><span class="site-label">Model internals</span></header>
 <main id="main-content"><section class="intro"><p class="eyebrow">Open the model</p><h1>What did the machine actually keep?</h1><p class="lede">Train a genuine small neural network in your browser, then look at the numbers it stored. Decide for yourself what those numbers are—and what they are not.</p></section>
 <ModelLesson client:load/></main><footer>Runs locally. The optional TensorFlow.js engine is downloaded from this site only if you choose it. No account or external model.</footer>
-</div></body></html>
+</div><OfflineSupport/></body></html>

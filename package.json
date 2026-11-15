@@ -27,6 +27,7 @@
     "api:start": "pnpm --filter @learning-machine/api start"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@playwright/test": "1.64.1"
   }
 }

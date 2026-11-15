@@ -3,6 +3,10 @@ import {compileLearningModule} from '@learning-machine/content';
 import lesson from '../../../../content/modules/intro-visual-reasoning.json';
 import Discovery from '../components/Discovery.tsx';
 import TutorPanel from '../components/TutorPanel.tsx';
+import ProgressControls from '../components/ProgressControls.tsx';
+import PlainGuide from '../components/PlainGuide.tsx';
+import textCatalog from '../../../../content/i18n/catalog.json';
+import OfflineSupport from '../components/OfflineSupport.astro';
 import '../styles/global.css';
 const compiled=compileLearningModule(lesson);
 const hypothesisNode=lesson.nodes.find((n)=>n.stage==='hypothesis');
@@ -23,6 +27,8 @@ const tutorEvidence=[{id:'lesson-goal',kind:'authored',text:'The lesson asks how
 <h1 id="intro-title">Learning begins with a question, not an answer.</h1>
 <p class="lede">Try your own solution. Predict what will happen. Explore alternatives and change your mind—or explain why you wouldn't. There is no political agreement score.</p></section>
 <Discovery client:load compiled={compiled}/>
+<PlainGuide client:visible catalog={textCatalog}/>
+<ProgressControls client:load releaseDigest={compiled.digest}/>
 <TutorPanel client:visible node={tutorNode} evidence={tutorEvidence}/>
 <p><a href="/vision">Build a reproducible geometric scene in the vision laboratory →</a></p>
 <p><a href="/shapes">Create your own training examples in the drawing laboratory →</a></p>
@@ -36,4 +42,4 @@ const tutorEvidence=[{id:'lesson-goal',kind:'authored',text:'The lesson asks how
 <p>A Socratic environment for exploring questions behind the proposed Right to Learn and Ephemeral Processing Act. This module runs real bounded pixel comparisons in your browser. Camera use remains optional and local; audio, later machine-learning modules and legal evaluation have separate readiness gates.</p></section>
 </main>
 <footer>Independent educational work. No account or personal-data submission required.</footer>
-</div></body></html>
+</div><OfflineSupport/></body></html>

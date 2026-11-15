@@ -1,4 +1,5 @@
 import {useEffect,useState} from 'react';
+import {reportProgress} from '../../../../packages/progress/src/progress.mjs';
 import {EVIDENCE,CAPSTONE_EXERCISES,POSITIONS,assessCapstone} from '../../../../packages/policy-lab/src/capstone.mjs';
 import type {CapstoneAssessment} from '../../../../packages/policy-lab/src/capstone.mjs';
 
@@ -8,6 +9,7 @@ export default function Capstone(){
  const [evidence,setEvidence]=useState<string[]>([]),[reasoning,setReasoning]=useState(''),[counter,setCounter]=useState(''),[response,setResponse]=useState('');
  const [result,setResult]=useState<CapstoneAssessment|null>(null),[error,setError]=useState('');
  const exercise=CAPSTONE_EXERCISES.find(e=>e.id===exerciseId)!;
+ useEffect(()=>{if(result)reportProgress('capstone',result.complete?'complete':'explained')},[result]);
  function assess(){try{setResult(assessCapstone(exerciseId,{position,reasoning,evidenceIds:evidence,counterargument:counter,response}));setError('')}catch(e){setError(e instanceof Error?e.message:'Cannot assess')}}
  return <section className="learning-card capstone" aria-labelledby="capstone-title" data-hydrated={hydrated?'true':'false'}>
   <p className="stage-label">Module 8 · Right to Learn capstone</p>

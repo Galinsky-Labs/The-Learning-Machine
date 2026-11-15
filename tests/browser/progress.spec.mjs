@@ -1,0 +1,27 @@
+import {test,expect} from '@playwright/test';
+test('progress is opt-in, records lessons, exports/imports and stays cleared',async({page})=>{
+ test.setTimeout(60000);
+ await page.goto('/');await expect(page.locator('[data-progress-hydrated="true"]')).toBeVisible();
+ expect(await page.evaluate(()=>Object.keys(localStorage).filter(k=>k.startsWith('tlm.')))).toEqual([]);
+ await page.getByLabel('Save my progress in this browser').check();
+ await page.goto('/capstone');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByRole('button',{name:'Check my reasoning'}).click();
+ await page.goto('/');await expect(page.locator('[data-progress-hydrated="true"]')).toBeVisible();
+ await expect(page.getByRole('list',{name:'Saved module progress'})).toContainText('Capstone: explained');
+ await page.getByRole('button',{name:'Export progress'}).click();
+ const exported=await page.getByLabel('Portable progress text').inputValue();
+ await page.getByRole('button',{name:'Clear saved progress'}).click();
+ await expect(page.getByRole('status')).toContainText('cannot guarantee physical erasure');
+ await page.goto('/capstone');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
+ await page.getByRole('button',{name:'Check my reasoning'}).click();
+ expect(await page.evaluate(()=>localStorage.getItem('tlm.progress.v1'))).toBeNull();
+ await page.goto('/');await expect(page.locator('[data-progress-hydrated="true"]')).toBeVisible();
+ await expect(page.getByLabel('Save my progress in this browser')).not.toBeChecked();
+ await page.getByLabel('Save my progress in this browser').check();
+ await page.getByLabel('Portable progress text').fill(exported);
+ await page.getByRole('button',{name:'Import progress'}).click();
+ await expect(page.getByRole('list',{name:'Saved module progress'})).toContainText('Capstone: explained');
+ await page.getByLabel('Portable progress text').fill('{"checksum":"bad","body":"{}"}');
+ await page.getByRole('button',{name:'Import progress'}).click();
+ await expect(page.getByRole('status')).toContainText('Import rejected');
+});

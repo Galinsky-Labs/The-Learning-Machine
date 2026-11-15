@@ -1,0 +1,7 @@
+{
+  "name": "@learning-machine/progress",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {".": {"types": "./src/progress.d.mts", "default": "./src/progress.mjs"}}
+}

@@ -1,5 +1,6 @@
-import {useState} from 'react';
+import {useEffect,useState} from 'react';
 import ModelLab from './ModelLab.tsx';
+import {reportProgress} from '../../../../packages/progress/src/progress.mjs';
 import type {RetentionEvent} from './ModelRetention.tsx';
 import {createModelLesson,recordModelHypothesis,commitRetentionPredictions,recordRetentionObservations,continueToExplanation,submitRetentionExplanation,recordModelLessonTransfer,modelLessonProgress,viewModelLessonExplanation,MODEL_LESSON_QUESTION,MODEL_LESSON_EXPLANATION} from '../../../../packages/learning-lab/src/model-lesson.mjs';
 import type {ModelLessonState} from '../../../../packages/learning-lab/src/model-lesson.mjs';
@@ -21,6 +22,7 @@ export default function ModelLesson(){
   });
  }
  const progress=modelLessonProgress(lesson);
+ useEffect(()=>{reportProgress('model-internals',lesson.stage==='complete'?'complete':lesson.stage==='transfer'?'transfer':lesson.stage==='explain'?'explained':lesson.stage==='observe'?'observed':lesson.stage==='experiment'?'predicted':'started')},[lesson.stage]);
  return <>
   <section className="learning-card model-lesson" aria-labelledby="model-lesson-title">
    <p className="stage-label">Module 3 · What Did the Machine Learn?</p>

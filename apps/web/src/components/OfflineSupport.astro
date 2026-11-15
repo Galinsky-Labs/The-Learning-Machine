@@ -1,0 +1,4 @@
+<script>
+// Registers the same-origin offline cache. Failure (unsupported browser, private mode) leaves the site fully usable online.
+if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/sw.js').catch(()=>{})})}
+</script>

@@ -1,6 +1,7 @@
 ---
 import LawStudio from '../components/LawStudio.tsx';
 import bill from '../../../../content/us-law/proposed-bill.json';
+import OfflineSupport from '../components/OfflineSupport.astro';
 import '../styles/global.css';
 ---
 <!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -9,4 +10,4 @@ import '../styles/global.css';
 <header class="site-header"><a class="brand" href="/">The Learning Machine</a><span class="site-label">Write the Law</span></header>
 <main id="main-content"><section class="intro"><p class="eyebrow">Your draft, your reasons</p><h1>Can your rule survive its counterexamples?</h1><p class="lede">Build a rule from terms, exclusions and carve-outs. Run it beside present law and the proposal on the same facts, then answer the hardest cases—whichever side they come from.</p></section>
 <LawStudio client:load bill={bill}/></main><footer>Local hypothetical drafting. Nothing is uploaded; exports stay on your device.</footer>
-</div></body></html>
+</div><OfflineSupport/></body></html>
