@@ -11,6 +11,7 @@ test('reference network trains without downloading TensorFlow.js and exposes rea
  await expect(page.getByRole('table',{name:/Stored parameters/})).toBeVisible();
  await page.getByLabel('Show the exact 16 × 16 numbers').check();
  await expect(page.getByRole('table',{name:/Hidden unit 1 stored weights/})).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),'no horizontal page scroll').toBe(false);
  await page.getByRole('button',{name:'Replay with the reference network'}).click();
  await expect(page.getByText(/Replay: exact-match/)).toBeVisible();
  await page.getByRole('button',{name:'Copy current model into the restore box'}).click();
