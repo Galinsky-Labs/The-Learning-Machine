@@ -1586,9 +1586,9 @@
         "Permission, information and money flows cannot be conflated",
         "Graph type and actor consistency tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1604,9 +1604,9 @@
         "Every monetary transfer conserves modeled balance",
         "Overflow, conservation and rounding tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1623,9 +1623,9 @@
         "Financial consequences follow only declared inputs",
         "Deterministic transaction golden tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1642,9 +1642,9 @@
         "All estimates are visibly conditional, not factual verdicts",
         "Sensitivity edge cases and uncertainty checks pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1661,9 +1661,9 @@
         "Alternative assumptions can reverse outcome honestly",
         "Scenario comparison property tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1682,9 +1682,9 @@
         "Missing evidence never silently becomes a precise forecast",
         "Unknown-propagation and boundary tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1702,9 +1702,9 @@
         "Each viewpoint can challenge premise and produce reasoned opposition",
         "Role-switch and bias tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1725,9 +1725,9 @@
         "Learner revises decisions using explicit economic consequences",
         "Accessible E2E multi-perspective cases pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 65,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
       "merged_commit": null,
       "verification_evidence": []
     },

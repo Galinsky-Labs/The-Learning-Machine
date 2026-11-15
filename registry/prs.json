@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:12:58Z",
+  "observedAt": "2026-11-15T19:13:13Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1507,7 +1507,9 @@
       "title": "Stakeholders and authorization/information graphs",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-051",
         "TLM-063"
@@ -1516,7 +1518,7 @@
       "scope": [
         "Model creator, publisher, learner, developer, user and regulator roles distinctly"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1524,7 +1526,9 @@
       "title": "Integer-money transaction model",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-065"
       ],
@@ -1532,7 +1536,7 @@
       "scope": [
         "Use fixed-point minor units, explicit rounding and balanced events"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1540,7 +1544,9 @@
       "title": "Access/fees/licensing scenarios",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-065",
         "TLM-066"
@@ -1549,7 +1555,7 @@
       "scope": [
         "Simulate hypothetical lawful access and alternate license structures"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1557,7 +1563,9 @@
       "title": "Creator earnings and potential market substitution",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-066",
         "TLM-067"
@@ -1566,7 +1574,7 @@
       "scope": [
         "Explore plausible changes in sales, licensing and expressively substitutive demand"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1574,7 +1582,9 @@
       "title": "Competition and entry-cost analysis",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-066",
         "TLM-068"
@@ -1583,7 +1593,7 @@
       "scope": [
         "Model startup entry costs, scale and various access-price assumptions"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1591,7 +1601,9 @@
       "title": "Assumption provenance and range propagation",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-065",
         "TLM-066",
@@ -1602,7 +1614,7 @@
       "scope": [
         "Store evidence classes, ranges and unsupported assumptions for every economic result"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1610,7 +1622,9 @@
       "title": "Switchable creator/teacher/developer viewpoints",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-065",
         "TLM-068",
@@ -1620,7 +1634,7 @@
       "scope": [
         "Show different interests without altering the factual core of a scenario"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1628,7 +1642,9 @@
       "title": "Module 6: Creator, Student and Market",
       "phase": "P8",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "dependsOn": [
         "TLM-067",
         "TLM-068",
@@ -1641,7 +1657,7 @@
       "scope": [
         "Guide visitor through rights, incentives, money and tradeoffs"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2749,6 +2765,18 @@
       "updatedAt": "2026-11-15T19:12:56Z",
       "mergedAt": "2026-11-15T19:12:55Z",
       "closedAt": "2026-11-15T19:12:55Z",
+      "draft": false
+    },
+    {
+      "id": 5326178018,
+      "number": 65,
+      "title": "TLM-065..072: Economics package and Module 6 Creator, Student and Market",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/65",
+      "createdAt": "2026-11-15T19:13:12Z",
+      "updatedAt": "2026-11-15T19:13:12Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
