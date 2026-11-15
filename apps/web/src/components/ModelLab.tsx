@@ -5,6 +5,7 @@ import type {NeuralModel} from '../../../../packages/learning-lab/src/neural.mjs
 import {inspectParameters,weightGrid,parameterChange,serializeModel,deserializeModel,parameterChecksum} from '../../../../packages/learning-lab/src/inspector.mjs';
 import {createModelExperimentTrace,replayModelExperiment} from '../../../../packages/learning-lab/src/model-trace.mjs';
 import type {ReplayResult} from '../../../../packages/learning-lab/src/model-trace.mjs';
+import ModelRetention from './ModelRetention.tsx';
 
 type Backend='reference'|'tfjs';
 const fmt=(n:number,d=4)=>Number.isFinite(n)?n.toFixed(d):'—';
@@ -88,6 +89,7 @@ export default function ModelLab(){
     <label className="response-label">Serialized model to restore<textarea className="response" value={restoreText} onChange={e=>setRestoreText(e.target.value)}/></label>
     <button type="button" className="action" onClick={restore}>Restore and verify</button>{restoreResult&&<p role="status">{restoreResult}</p>}
    </section>
+   <ModelRetention key={trace.parameterChecksum} dataset={dataset} split={split} network={model}/>
   </>}
  </section>;
 }

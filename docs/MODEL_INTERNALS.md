@@ -30,3 +30,26 @@ and the completed epoch count. Replay re-trains the float64 reference with the r
 
 Tests include a pinned CPU golden checksum and a TensorFlow.js CPU-versus-reference tolerance test. GPU (WebGL) runs are only checked
 at runtime in the browser by the same tolerance comparison; no GPU result is claimed in CI.
+
+## TLM-035 — Dataset disposal and the retained model
+
+`retention.mjs` keeps the lesson drawings, split and three models (nearest-example memorizer, linear classifier, neural network) in
+one immutable local application store. `disposeTrainingData` removes the drawings and split and records
+`physicalErasureGuaranteed:false`; the models stay and keep working. `auditRetention` measures, before disposal, what each model still
+reveals: the memorizer holds exact copies of every training drawing; the parametric models hold no drawings but are measurably more
+confident on training drawings than on held-out drawings (a membership signal), and linear weights can be turned into class templates.
+`findAbsoluteRetentionClaims` flags promises such as “permanently erased” or “fully unlearned”; the shipped disclosures are tested against it.
+
+## TLM-037 — Honest intermediate-operation microscope
+
+`microscope.mjs` traces one forward pass from stored parameters: input pixels, hidden weighted sums, ReLU, logits and softmax
+(kind `computed`, with the executed values), a forward-pass timing (kind `measured`, with its clock and caveat) and an arrow diagram
+(kind `illustration`, which must carry a disclosure). `validateMicroscopeTrace` rejects undeclared provenance, illustrations without
+disclosures, measurements without clocks and performance figures not labelled as measured; `verifyMicroscopeTrace` recomputes the pass and
+rejects altered values.
+
+## TLM-038 — Unseen transfer and overfitting challenge
+
+`transfer.mjs` offers five novel drawings (far-shifted cross, small square, vertical line, broken square, and a square-cross hybrid with no
+ground truth). The visitor commits per-model predictions first; the results are computed. When a model fails where the visitor expected
+success, a revision citing one of those failures is required before it is recorded. The hybrid never counts as right, wrong or surprising.
