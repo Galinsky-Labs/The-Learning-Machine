@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:44:53Z",
+  "observedAt": "2026-11-15T19:45:15Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -2184,7 +2184,9 @@
       "title": "Independent hosting, deploy and recovery drills",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        69
+      ],
       "dependsOn": [
         "TLM-085",
         "TLM-092",
@@ -2194,7 +2196,7 @@
       "scope": [
         "Provision this project's CDN/static site, optional API, staging and rollback"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2953,6 +2955,18 @@
       "updatedAt": "2026-11-15T19:43:14Z",
       "mergedAt": "2026-11-15T19:43:14Z",
       "closedAt": "2026-11-15T19:43:14Z",
+      "draft": false
+    },
+    {
+      "id": 5326469752,
+      "number": 69,
+      "title": "Record P11 evidence and the first hosting recovery drill",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/69",
+      "createdAt": "2026-11-15T19:45:14Z",
+      "updatedAt": "2026-11-15T19:45:14Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]

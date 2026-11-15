@@ -2264,9 +2264,9 @@
         "Staging deploy and restored previous release work without other products",
         "Deployment and rollback smoke against actual origin passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 69,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/69",
       "merged_commit": null,
       "verification_evidence": []
     },
