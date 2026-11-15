@@ -1481,11 +1481,15 @@
         "Learning permission is not treated as distribution license",
         "Negative output and archive cases pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 64,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/64",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "441be5883331a5a1ebb73153eb0596d35ceabdef",
+      "verification_evidence": [
+        "PR #64 head 08d76006b04b180a4216524d46cc0805dc5e54d6 passed workspace-and-foundation run 43750595134 (pnpm check incl. 14 new policy-lab tests and legal:check; Playwright desktop+mobile legal-lesson specs).",
+        "Case library: 18/18 golden outcomes reproduce through the real evaluators; 9/9 symmetric adversarial balance.",
+        "PR #64 squash-merged as 441be5883331a5a1ebb73153eb0596d35ceabdef."
+      ]
     },
     {
       "id": "TLM-062",
@@ -1505,11 +1509,15 @@
         "Each case distinguishes actual permission, fair use, license or uncertainty",
         "18 complete source-linked scenario fixtures pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 64,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/64",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "441be5883331a5a1ebb73153eb0596d35ceabdef",
+      "verification_evidence": [
+        "PR #64 head 08d76006b04b180a4216524d46cc0805dc5e54d6 passed workspace-and-foundation run 43750595134 (pnpm check incl. 14 new policy-lab tests and legal:check; Playwright desktop+mobile legal-lesson specs).",
+        "Case library: 18/18 golden outcomes reproduce through the real evaluators; 9/9 symmetric adversarial balance.",
+        "PR #64 squash-merged as 441be5883331a5a1ebb73153eb0596d35ceabdef."
+      ]
     },
     {
       "id": "TLM-063",
@@ -1526,11 +1534,15 @@
         "Every claim supports inspectable citation or flagged uncertainty",
         "Browser citation integrity and assistive tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 64,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/64",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "441be5883331a5a1ebb73153eb0596d35ceabdef",
+      "verification_evidence": [
+        "PR #64 head 08d76006b04b180a4216524d46cc0805dc5e54d6 passed workspace-and-foundation run 43750595134 (pnpm check incl. 14 new policy-lab tests and legal:check; Playwright desktop+mobile legal-lesson specs).",
+        "Case library: 18/18 golden outcomes reproduce through the real evaluators; 9/9 symmetric adversarial balance.",
+        "PR #64 squash-merged as 441be5883331a5a1ebb73153eb0596d35ceabdef."
+      ]
     },
     {
       "id": "TLM-064",
@@ -1551,11 +1563,15 @@
         "Learner distinguishes learning rights from separate legal limits",
         "E2E contradictory and accessible paths pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 64,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/64",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "441be5883331a5a1ebb73153eb0596d35ceabdef",
+      "verification_evidence": [
+        "PR #64 head 08d76006b04b180a4216524d46cc0805dc5e54d6 passed workspace-and-foundation run 43750595134 (pnpm check incl. 14 new policy-lab tests and legal:check; Playwright desktop+mobile legal-lesson specs).",
+        "Case library: 18/18 golden outcomes reproduce through the real evaluators; 9/9 symmetric adversarial balance.",
+        "PR #64 squash-merged as 441be5883331a5a1ebb73153eb0596d35ceabdef."
+      ]
     },
     {
       "id": "TLM-065",
