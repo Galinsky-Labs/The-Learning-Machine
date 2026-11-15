@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:00:23Z",
+  "observedAt": "2026-11-15T19:06:57Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1400,7 +1400,9 @@
       "title": "Models, archives, output infringement and memorization",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-035",
         "TLM-049",
@@ -1411,7 +1413,7 @@
       "scope": [
         "Compare learned parameters, retrievable expression, permanent archive and output liability"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1419,7 +1421,9 @@
       "title": "Eighteen-context adversarial legal case library",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-055",
         "TLM-056",
@@ -1433,7 +1437,7 @@
       "scope": [
         "Cover filtering, accessibility, caching, networks, search and other described cases"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1441,7 +1445,9 @@
       "title": "Legal truth-layer and source inspector",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-049",
         "TLM-050",
@@ -1452,7 +1458,7 @@
       "scope": [
         "Separate present statutes, interpretations, hypothetical rules, proposed law and independent rights"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1460,7 +1466,9 @@
       "title": "Complete education and acquisition lessons",
       "phase": "P7",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "dependsOn": [
         "TLM-057",
         "TLM-058",
@@ -1475,7 +1483,7 @@
       "scope": [
         "Publish Modules 4–5 with valid disagreement and alternative paths"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2713,6 +2721,18 @@
       "updatedAt": "2026-11-15T19:00:16Z",
       "mergedAt": "2026-11-15T19:00:16Z",
       "closedAt": "2026-11-15T19:00:16Z",
+      "draft": false
+    },
+    {
+      "id": 5326118638,
+      "number": 64,
+      "title": "TLM-061/062/063/064: Model/output law, case library, truth layers and legal lessons",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/64",
+      "createdAt": "2026-11-15T19:06:56Z",
+      "updatedAt": "2026-11-15T19:06:56Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
