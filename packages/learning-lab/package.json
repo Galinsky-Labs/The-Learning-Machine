@@ -4,6 +4,31 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/dataset.mjs"
+    ".": "./src/dataset.mjs",
+    "./neural": {
+      "types": "./src/neural.d.mts",
+      "default": "./src/neural.mjs"
+    },
+    "./inspector": {
+      "types": "./src/inspector.d.mts",
+      "default": "./src/inspector.mjs"
+    },
+    "./model-trace": {
+      "types": "./src/model-trace.d.mts",
+      "default": "./src/model-trace.mjs"
+    },
+    "./tf-loader": {
+      "types": "./src/tf-loader.d.mts",
+      "default": "./src/tf-loader.mjs"
+    },
+    "./lesson-data": {
+      "types": "./src/lesson-data.d.mts",
+      "default": "./src/lesson-data.mjs"
+    }
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-backend-cpu": "4.22.0",
+    "@tensorflow/tfjs-backend-webgl": "4.22.0",
+    "@tensorflow/tfjs-core": "4.22.0"
   }
 }

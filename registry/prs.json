@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-04T21:34:00Z",
+  "observedAt": "2026-11-15T18:37:29Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -733,7 +733,9 @@
       "title": "Optional small neural-network TensorFlow.js backend",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        62
+      ],
       "dependsOn": [
         "TLM-027",
         "TLM-030"
@@ -742,7 +744,7 @@
       "scope": [
         "Lazy-load real local neural training with CPU fallback and limits"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -750,7 +752,9 @@
       "title": "Actual model parameter inspector",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        62
+      ],
       "dependsOn": [
         "TLM-027",
         "TLM-033"
@@ -759,7 +763,7 @@
       "scope": [
         "Expose real weights/centroids and changes caused by training"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -784,7 +788,9 @@
       "title": "Versioned reproducible model experiments",
       "phase": "P4",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        62
+      ],
       "dependsOn": [
         "TLM-006",
         "TLM-033",
@@ -794,7 +800,7 @@
       "scope": [
         "Pin algorithm, inputs, seeds and backend caveats in replay trace"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2646,6 +2652,18 @@
       "updatedAt": "2026-11-04T21:30:59Z",
       "mergedAt": "2026-11-04T21:30:59Z",
       "closedAt": "2026-11-04T21:30:59Z",
+      "draft": false
+    },
+    {
+      "id": 5325863073,
+      "number": 62,
+      "title": "TLM-033/034/036: Optional TF.js network, parameter inspector, reproducible traces",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/62",
+      "createdAt": "2026-11-15T18:37:27Z",
+      "updatedAt": "2026-11-15T18:37:27Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
