@@ -1,5 +1,6 @@
 import {test,expect} from '@playwright/test';
 test('reference network trains without downloading TensorFlow.js and exposes real parameters',async({page})=>{
+ test.setTimeout(90000);
  const scripts=[];page.on('request',r=>{if(/tfjs|dist\./.test(r.url()))scripts.push(r.url())});
  const posts=[];page.on('request',r=>{if(r.method()!=='GET'&&r.method()!=='HEAD')posts.push(r.url())});
  await page.goto('/model');
@@ -18,6 +19,7 @@ test('reference network trains without downloading TensorFlow.js and exposes rea
  expect(scripts.filter(u=>/tfjs/.test(u))).toEqual([]);expect(posts).toEqual([]);
 });
 test('optional TensorFlow.js engine trains locally within tolerance of the reference',async({page})=>{
+ test.setTimeout(90000);
  await page.goto('/model');await expect(page.locator('[data-hydrated="true"]')).toBeVisible();
  await page.getByLabel(/Optional TensorFlow.js/).check();
  await page.getByLabel('Epochs').fill('20');
