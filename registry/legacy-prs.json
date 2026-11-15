@@ -2142,9 +2142,9 @@
         "No account is required and removed application state is not silently restored",
         "Import/export, corruption and deletion tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2161,9 +2161,9 @@
         "Translations never silently replace official legal authority",
         "Missing-locale and source-equivalence tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2205,9 +2205,9 @@
         "Core experiences work in low-power and optional-service-offline modes",
         "Reference browsers and performance budgets pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2226,9 +2226,9 @@
         "No unresolved serious release-scope vulnerability remains",
         "Automated negative security and privacy evidence passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
       "verification_evidence": []
     },

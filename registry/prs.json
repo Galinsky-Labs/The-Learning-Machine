@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:35:00Z",
+  "observedAt": "2026-11-15T19:40:03Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -2062,7 +2062,9 @@
       "title": "Optional local progress, export and deletion",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "dependsOn": [
         "TLM-006",
         "TLM-016",
@@ -2072,7 +2074,7 @@
       "scope": [
         "Support local restore, explicit clear and portable learning journey"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2080,7 +2082,9 @@
       "title": "Plain-language and localization-ready text",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "dependsOn": [
         "TLM-080",
         "TLM-082"
@@ -2089,7 +2093,7 @@
       "scope": [
         "Author simpler explanations, translation catalog and original-source distinctions"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2119,7 +2123,9 @@
       "title": "Device performance, fallback and offline operation",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "dependsOn": [
         "TLM-040",
         "TLM-048",
@@ -2129,7 +2135,7 @@
       "scope": [
         "Optimize loading, cancel heavy tasks, route around unsupported GPU/audio"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2137,7 +2143,9 @@
       "title": "Threat model, secure publishing and privacy audit",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "dependsOn": [
         "TLM-081",
         "TLM-084",
@@ -2148,7 +2156,7 @@
       "scope": [
         "Harden CSP, upload handling, workers, credentials, auth and media defaults"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2913,6 +2921,18 @@
       "updatedAt": "2026-11-15T19:34:58Z",
       "mergedAt": "2026-11-15T19:34:58Z",
       "closedAt": "2026-11-15T19:34:58Z",
+      "draft": false
+    },
+    {
+      "id": 5326422608,
+      "number": 68,
+      "title": "TLM-089/090/092/093: Local progress, plain-language text, offline/perf budgets, security headers (+TLM-091 automated a11y)",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
+      "createdAt": "2026-11-15T19:40:02Z",
+      "updatedAt": "2026-11-15T19:40:02Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
