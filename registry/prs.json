@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:40:03Z",
+  "observedAt": "2026-11-15T19:40:11Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -2101,7 +2101,9 @@
       "title": "WCAG 2.2 AA whole-platform accessible parity",
       "phase": "P11",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "dependsOn": [
         "TLM-024",
         "TLM-032",
@@ -2115,8 +2117,10 @@
       "scope": [
         "Verify equivalent nonvisual, keyboard, reduced-motion and no-audio routes"
       ],
-      "legacyStatus": "planned",
-      "legacyEvidence": []
+      "legacyStatus": "in_progress",
+      "legacyEvidence": [
+        "Automated part only in PR #68: axe-core WCAG 2.0-2.2 A/AA on all 10 pages (Chromium + Firefox in CI), landmark/heading/reduced-motion checks, keyboard-operable Playwright routes for every module. Manual screen-reader/keyboard/zoom matrix not yet performed, so the unit is not accepted."
+      ]
     },
     {
       "id": "TLM-092",
@@ -2930,7 +2934,7 @@
       "state": "open",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "createdAt": "2026-11-15T19:40:02Z",
-      "updatedAt": "2026-11-15T19:40:02Z",
+      "updatedAt": "2026-11-15T19:40:06Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false

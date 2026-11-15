@@ -2185,11 +2185,13 @@
         "All eight concepts reachable through equivalent accessible interactions",
         "Automated and manual assistive matrix passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_progress",
+      "github_pr_number": 68,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/68",
       "merged_commit": null,
-      "verification_evidence": []
+      "verification_evidence": [
+        "Automated part only in PR #68: axe-core WCAG 2.0-2.2 A/AA on all 10 pages (Chromium + Firefox in CI), landmark/heading/reduced-motion checks, keyboard-operable Playwright routes for every module. Manual screen-reader/keyboard/zoom matrix not yet performed, so the unit is not accepted."
+      ]
     },
     {
       "id": "TLM-092",
