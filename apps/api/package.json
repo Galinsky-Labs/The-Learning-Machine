@@ -1,0 +1,18 @@
+{
+  "name": "@learning-machine/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Optional private publisher API and opt-in tutor gateway. The public static site never depends on it.",
+  "scripts": {
+    "migrate": "node src/migrate.mjs",
+    "start": "node src/migrate.mjs && node src/server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@learning-machine/content": "workspace:*",
+    "@learning-machine/evidence": "workspace:*",
+    "pg": "8.16.3",
+    "@anthropic-ai/sdk": "1.3.0"
+  }
+}

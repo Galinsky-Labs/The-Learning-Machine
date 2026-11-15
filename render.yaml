@@ -12,3 +12,33 @@ services:
     envVars:
       - key: NODE_VERSION
         value: "24"
+
+  # Optional private publisher API and opt-in tutor gateway. The static site never depends on it.
+  - type: web
+    runtime: node
+    name: the-learning-machine-api
+    repo: https://github.com/Galinsky-Labs/The-Learning-Machine
+    branch: main
+    plan: free
+    region: ohio
+    autoDeploy: true
+    buildCommand: npx --yes pnpm@11.25.0 install --frozen-lockfile --filter @learning-machine/api...
+    startCommand: cd apps/api && node src/migrate.mjs && node src/server.mjs
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGINS
+        value: https://the-learning-machine.onrender.com
+      - key: DATABASE_URL          # Neon project "the-learning-machine", pooled host
+        sync: false
+      - key: DATABASE_URL_DIRECT   # Neon direct host, used for migrations
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: ADMIN_BOOTSTRAP_TOKEN # one-time creation of the first publisher account
+        sync: false
+      - key: ANTHROPIC_API_KEY     # optional; without it the tutor stays offline-only
+        sync: false

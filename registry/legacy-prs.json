@@ -1769,11 +1769,14 @@
         "Rule meaning survives export, import and edited cases",
         "Compiler and boundary tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-074",
@@ -1788,11 +1791,14 @@
         "Visitor can create substantively different legislation",
         "Multiple-policy UI golden cases pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-075",
@@ -1808,11 +1814,14 @@
         "Results expose exactly which altered rule changed outcome",
         "Deterministic differential runs pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-076",
@@ -1827,11 +1836,14 @@
         "No political morality or compliance score is fabricated",
         "Assumption and accessible chart tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-077",
@@ -1847,11 +1859,14 @@
         "Rules aligned with proposed law receive no easier evaluation",
         "Neutrality and corner-case fixtures pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-078",
@@ -1867,11 +1882,14 @@
         "Learner revises without losing older experiment evidence",
         "History replay and local-only roundtrip tests pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-079",
@@ -1891,11 +1909,14 @@
         "Multiple valid dissenting drafts can complete module",
         "E2E authoring and disagreement paths pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-080",
@@ -1912,11 +1933,14 @@
         "Success requires reasoning, never support for sponsor's policy",
         "Transfer-rubric and alternative-view acceptance pass"
       ],
-      "status": "in_review",
+      "status": "merged",
       "github_pr_number": 66,
       "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
-      "merged_commit": null,
-      "verification_evidence": []
+      "merged_commit": "6dbb9d373bac7b3d61bcad0a71845842e612abb9",
+      "verification_evidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-081",
@@ -1930,9 +1954,9 @@
         "Unauthorized editing, access and publishing fail closed",
         "CSRF, role escalation and expiry tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1949,9 +1973,9 @@
         "Private drafts cannot modify immutable public releases",
         "Invalid content and editing integration tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1969,9 +1993,9 @@
         "A changed or missing source invalidates dependent public claims",
         "Source-change and tampered citation tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -1988,9 +2012,9 @@
         "Unreviewed assets and malicious formats cannot publish",
         "Asset signature and unsafe upload tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2008,9 +2032,9 @@
         "In-flight release failure leaves prior valid release available",
         "Atomic release and CDN consistency tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2027,9 +2051,9 @@
         "Core lessons remain functional with provider missing or disabled",
         "Outage and no-API complete journey tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2046,9 +2070,9 @@
         "Invented citations, legal decisions and political steering are rejected",
         "Red-team prompt and contradiction evaluation passes"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },
@@ -2066,9 +2090,9 @@
         "Raw browser media never leaves automatically and provider failure does not block learning",
         "Privacy and usage budget enforcement tests pass"
       ],
-      "status": "planned",
-      "github_pr_number": null,
-      "github_pr_url": null,
+      "status": "in_review",
+      "github_pr_number": 67,
+      "github_pr_url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
       "merged_commit": null,
       "verification_evidence": []
     },

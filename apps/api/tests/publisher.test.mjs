@@ -1,0 +1,75 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {setup,lesson,catalog} from './helpers.mjs';
+import {totp,newTotpSecret,verifyTotp,signToken,verifyToken} from '../src/crypto.mjs';
+const png=Buffer.from([0x89,0x50,0x4e,0x47,0x0d,0x0a,0x1a,0x0a,1,2,3]).toString('base64');
+test('TLM-081: bootstrap once, MFA-required login, scoped roles',async()=>{
+ const t=await setup();
+ assert.equal(t.boot.status,201);
+ assert.equal((await t.call('POST','/auth/bootstrap',{token:'boot-token-123',email:'x@example.org',password:'correct horse battery'})).status,409);
+ assert.equal((await t.call('POST','/auth/login',{email:'owner@example.org',password:'correct horse battery',totp:'000000'})).status,401);
+ assert.equal((await t.call('POST','/auth/login',{email:'owner@example.org',password:'wrong password here',totp:totp(t.boot.body.totpSecret,t.clock())})).status,401);
+ assert.equal((await t.call('POST','/releases',{},t.author)).status,403);
+ assert.equal((await t.call('POST','/users',{email:'z@example.org',role:'publisher',password:'another long password'},t.reviewer)).status,403);
+ assert.equal((await t.call('POST','/drafts',{module:lesson})).status,401);
+ const forged=signToken({sub:'x',role:'publisher',mfa:true,exp:t.clock()+1000},'y'.repeat(40));
+ assert.equal((await t.call('POST','/releases',{},forged)).status,401);
+ t.advance(9*60*60*1000);assert.equal((await t.call('POST','/drafts',{module:lesson},t.author)).status,401,'sessions expire');
+ const s=newTotpSecret();assert.equal(verifyTotp(s,totp(s,1e12),1e12+29000),true);assert.equal(verifyTotp(s,totp(s,1e12),1e12+120000),false);
+ assert.equal(verifyToken('a.b',('k').repeat(40),0),null);
+});
+test('TLM-082: drafts compile, preview, and need an independent approver',async()=>{
+ const t=await setup();
+ const bad=await t.call('POST','/drafts',{module:{...lesson,startNodeId:'missing'}},t.author);assert.equal(bad.status,422);
+ const ok=await t.call('POST','/drafts',{module:lesson},t.author);assert.equal(ok.status,201);assert.match(ok.body.digest,/^[a-f0-9]{64}$/);
+ assert.equal((await t.call('GET','/drafts/intro-visual-reasoning/preview',null,t.reviewer)).body.compiled.lessonId,'intro-visual-reasoning');
+ assert.equal((await t.call('POST','/drafts',{module:lesson},t.author2)).status,403,'cannot overwrite another author');
+ assert.equal((await t.call('POST','/drafts/intro-visual-reasoning/approve',{},t.reviewer)).body.status,'approved');
+});
+test('TLM-083: sources are validated against the pack, hashed and independently reviewed',async()=>{
+ const t=await setup();
+ const fake={...catalog.authorities.find(a=>a.id==='feist-rural'),id:'invented-case',citation:'1 U.S. 1',sourceUrl:'https://example.com/case'};
+ assert.equal((await t.call('POST','/sources',{authority:fake},t.author)).status,422);
+ const real={...catalog.authorities.find(a=>a.id==='feist-rural'),relevance:'Facts are not protected by copyright; only original selection or arrangement can be.'};
+ const sub=await t.call('POST','/sources',{authority:real},t.author);assert.equal(sub.status,201);
+ assert.equal((await t.call('POST','/sources/feist-rural/review',{decision:'approve',note:'ok'},t.reviewer)).status,400,'review note required');
+ assert.equal((await t.call('POST','/sources/feist-rural/review',{decision:'approve',note:'Checked against official summary.'},t.reviewer)).body.status,'approved');
+ const rec=await t.store.getRecord('source','feist-rural');await t.store.putRecord('source','feist-rural',{...rec,authority:{...rec.authority,title:'tampered'}});
+ assert.equal((await t.call('POST','/sources/feist-rural/review',{decision:'approve',note:'Second look at it.'},t.reviewer)).status,409);
+});
+test('TLM-084: media import checks type by content, size, license and rights review',async()=>{
+ const t=await setup();
+ const base={mime:'image/png',license:'original-work',rightsHolder:'The Learning Machine',dataBase64:png};
+ assert.equal((await t.call('POST','/media',{...base,mime:'image/svg+xml'},t.author)).status,415);
+ assert.equal((await t.call('POST','/media',{...base,dataBase64:Buffer.from('<script>').toString('base64')},t.author)).status,415);
+ assert.equal((await t.call('POST','/media',{...base,license:'found-online'},t.author)).status,400);
+ assert.equal((await t.call('POST','/media',{...base,license:'licensed-with-proof'},t.author)).status,400);
+ assert.equal((await t.call('POST','/media',{...base,dataBase64:Buffer.alloc(2*1024*1024+1,0x89).toString('base64')},t.author)).status,413);
+ const ok=await t.call('POST','/media',base,t.author);assert.equal(ok.status,201);
+ assert.equal((await t.call('POST','/media/'+ok.body.id+'/review',{decision:'approve'},t.author)).status,403);
+ assert.equal((await t.call('POST','/media/'+ok.body.id+'/review',{decision:'approve'},t.reviewer)).body.status,'approved');
+});
+test('TLM-085: immutable digest-addressed releases, atomic activation and rollback',async()=>{
+ const t=await setup();
+ assert.equal((await t.call('POST','/releases',{},t.admin)).status,409,'nothing approved yet');
+ await t.call('POST','/drafts',{module:lesson},t.author);await t.call('POST','/drafts/intro-visual-reasoning/approve',{},t.reviewer);
+ const r1=await t.call('POST','/releases',{},t.admin);assert.equal(r1.status,201);
+ assert.equal((await t.call('POST','/releases',{},t.admin)).status,409,'identical content cannot be re-released');
+ await t.call('POST','/media',{mime:'image/png',license:'cc0',rightsHolder:'Lesson author',dataBase64:png},t.author);
+ const media=(await t.store.listRecords('media'))[0];await t.call('POST','/media/'+media.id+'/review',{decision:'approve'},t.reviewer);
+ const r2=await t.call('POST','/releases',{},t.admin);assert.notEqual(r2.body.digest,r1.body.digest);
+ assert.equal((await t.call('GET','/releases/active')).status,404);
+ await t.call('POST','/releases/'+r1.body.id+'/activate',{reason:'first'},t.admin);await t.call('POST','/releases/'+r2.body.id+'/activate',{reason:'second'},t.admin);
+ assert.equal((await t.call('GET','/releases/active')).body.id,r2.body.id);
+ const rb=await t.call('POST','/releases/rollback',{},t.admin);assert.deepEqual(rb.body,{active:r1.body.id,rolledBackFrom:r2.body.id});
+ assert.equal((await t.call('GET','/releases/active')).body.id,r1.body.id);
+ const stored=await t.store.getRelease(r1.body.id);stored.manifest.modules=[];assert.equal((await t.store.getRelease(r1.body.id)).manifest.modules.length,1,'stored release unaffected by caller edits');
+ await assert.rejects(t.store.insertRelease({...stored,digest:'other'}),/already exists/);
+});
+test('public health works without a database and publisher routes fail closed',async()=>{
+ const {createApp}=await import('../src/app.mjs');
+ const app=createApp({store:null,config:{sessionSecret:'s'.repeat(40)},catalog});
+ const h=await app({method:'GET',path:'/health'});assert.equal(h.status,200);assert.equal(h.body.db,'not-configured');assert.equal(h.body.tutor,'offline-only');
+ assert.equal((await app({method:'POST',path:'/drafts',body:{}})).status,503);
+ assert.equal((await app({method:'GET',path:'/nope'})).status,404);
+ assert.throws(()=>createApp({store:null,config:{sessionSecret:'short'},catalog}),/SESSION_SECRET/);
+});

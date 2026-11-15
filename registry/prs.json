@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "repository": "Galinsky-Labs/The-Learning-Machine",
   "roadmapVersion": 1,
-  "observedAt": "2026-11-15T19:22:19Z",
+  "observedAt": "2026-11-15T19:29:19Z",
   "planVerified": true,
   "plannedPrCount": 96,
   "legacyPlanFile": "registry/legacy-prs.json",
@@ -1701,8 +1701,11 @@
       "scope": [
         "Support nested conditions and annotations without arbitrary code"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-074",
@@ -1720,8 +1723,11 @@
       "scope": [
         "Build terms, exclusions, carveouts, previews, undo and keyboard navigation"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-075",
@@ -1740,8 +1746,11 @@
       "scope": [
         "Run present law, proposal and visitor rules on identical facts"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-076",
@@ -1759,8 +1768,11 @@
       "scope": [
         "Show rights, burdens, exceptions, indeterminate outcomes and actor impact"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-077",
@@ -1779,8 +1791,11 @@
       "scope": [
         "Challenge any policy with its concrete flaws and counterexamples"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-078",
@@ -1799,8 +1814,11 @@
       "scope": [
         "Enable revision, comparisons and local export of original user hypotheses"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-079",
@@ -1823,8 +1841,11 @@
       "scope": [
         "Create real proposed-law challenge and counterexample-driven revision"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-080",
@@ -1844,15 +1865,20 @@
       "scope": [
         "Integrate technical, legal and economic evidence in novel transfer exercises"
       ],
-      "legacyStatus": "in_review",
-      "legacyEvidence": []
+      "legacyStatus": "merged",
+      "legacyEvidence": [
+        "PR #66 head 4755de733845d60e70a79c30138ef118833cd95c passed workspace-and-foundation run 43752063035 (pnpm check incl. 11 new studio/write-law/capstone tests; Playwright desktop+mobile studio specs).",
+        "PR #66 squash-merged as 6dbb9d373bac7b3d61bcad0a71845842e612abb9."
+      ]
     },
     {
       "id": "TLM-081",
       "title": "Private publisher authentication and roles",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-003"
       ],
@@ -1860,7 +1886,7 @@
       "scope": [
         "Implement independent secure admin auth with MFA for privileged publication"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1868,7 +1894,9 @@
       "title": "Curriculum authoring and preview environment",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-004",
         "TLM-081"
@@ -1877,7 +1905,7 @@
       "scope": [
         "Edit question graphs, media, accessibility routes and scenarios before release"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1885,7 +1913,9 @@
       "title": "Evidence integrity and source review workflow",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-049",
         "TLM-050",
@@ -1895,7 +1925,7 @@
       "scope": [
         "Review exact U.S. authorities, quoted spans, holdings and legal-status labels"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1903,7 +1933,9 @@
       "title": "Media rights registry and secure import",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-041",
         "TLM-082"
@@ -1912,7 +1944,7 @@
       "scope": [
         "Track authorized original audio/video and bounded publisher uploads"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1920,7 +1952,9 @@
       "title": "Immutable content packaging, publication and rollback",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-082",
         "TLM-083",
@@ -1930,7 +1964,7 @@
       "scope": [
         "Publish hash-bound release bundles atomically with rollback"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1938,7 +1972,9 @@
       "title": "Optional provider-neutral Socratic AI tutor",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-013",
         "TLM-083"
@@ -1947,7 +1983,7 @@
       "scope": [
         "Offer constrained voluntary question help backed by offline deterministic fallback"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1955,7 +1991,9 @@
       "title": "Evidence-grounded tutor and bias controls",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-083",
         "TLM-086"
@@ -1964,7 +2002,7 @@
       "scope": [
         "Validate AI output format, lesson evidence, uncertainty and permitted question roles"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -1972,7 +2010,9 @@
       "title": "Tutor consent, limits and privacy isolation",
       "phase": "P10",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "dependsOn": [
         "TLM-006",
         "TLM-086",
@@ -1982,7 +2022,7 @@
       "scope": [
         "Minimize optional data sharing, rate-limit, timeout and cancel safely"
       ],
-      "legacyStatus": "planned",
+      "legacyStatus": "in_review",
       "legacyEvidence": []
     },
     {
@@ -2823,10 +2863,22 @@
       "id": 5326265553,
       "number": 66,
       "title": "TLM-073..080: Write the Law studio and Right to Learn capstone",
-      "state": "open",
+      "state": "closed",
       "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/66",
       "createdAt": "2026-11-15T19:22:17Z",
-      "updatedAt": "2026-11-15T19:22:18Z",
+      "updatedAt": "2026-11-15T19:25:36Z",
+      "mergedAt": "2026-11-15T19:25:36Z",
+      "closedAt": "2026-11-15T19:25:36Z",
+      "draft": false
+    },
+    {
+      "id": 5326329002,
+      "number": 67,
+      "title": "TLM-081..088: Optional publisher API and consent-gated tutor",
+      "state": "open",
+      "url": "https://github.com/Galinsky-Labs/The-Learning-Machine/pull/67",
+      "createdAt": "2026-11-15T19:29:18Z",
+      "updatedAt": "2026-11-15T19:29:18Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
